@@ -1,0 +1,103 @@
+/***********************************************************************
+
+Theme Name:  	Devly
+Theme URI:   	http://devly.info/
+Description: 	Devly is a modern theme, built to give developers a solid starting point for wordpress dev.
+
+Author:      	Josh McDonald
+Author URI		http://onestepcreative.com
+Version:     	2.5
+
+Twitter:		@onestepcreative
+Github:			https://github.com/onestepcreative
+
+***********************************************************************/
+/**********************************************************************
+
+	You're probably looking for some styles to get 
+	started with your new copy of Devly. Let me give
+	you the run down of where to find things, and
+	what this theme can do.
+	
+	Devly was built with developers in mind. It aims
+	to make life easier by taking care tedious tasks,
+	and simplifying the work flow. It aims to help
+	you re-use code whenever possible!
+	
+	
+	The file sctructure:
+	
+	-	/assets/core/
+	
+		- admin.php
+		
+			- 	This handles most of the things going
+			  	on in the admin. We remove a whole bunch
+			  	of default widgets & add a couple of our
+			  	own. This is where we also set up the
+			  	custom login screen, and login functions.
+			  
+			  	Check out the comments to see what it can do!
+
+		- core.php
+		
+			-	This is where all the heavy lifting
+				is happening. We're cleaning up a few
+				messy parts of wordpress & running some
+				code for security precautions. This is
+				also where all of the stylesheets and
+				scripts are enqueued at.
+				
+				Again, check the comments.
+				
+		- helpers.php
+		
+			- 	This file consists of a lot of helper
+				functions I've found myself using on most
+				of my Wordpress sites. Feel free to use
+				them, or delete em!
+				
+				The comments are a bit more detailed here!
+		
+		- settings.php
+		
+			-	This file sets up the theme options you
+				see in the admin. It was included in Devly
+				as a "base" template, so others can use
+				it as a starting point, so the information
+				you enter in the settings page won't be
+				reflected on the site.		
+	
+	
+	The rest of the files are in /assets/
+	
+	-	assets/css/
+		
+		-	admin.css 		- Admin styles
+		-	devly.css 		- Normalize CSS Reset
+		-	global.css		- Your theme styles are here
+		-	responsive.css	- Additional theme styles (responsive)	
+		
+	- assets/img/
+	
+		- img/admin			- Any image assets used in the admin
+		- img/ui			- Image assets used for the theme
+		
+	- assets/scripts/
+	
+		- scripts/libs		- Any third party JS Libraries needed
+		- main.js			- Theme scripts & fallsbacks
+		
+	- assets/type/			- I use this for font files when needed	
+	
+	
+													-	Happy Coding	
+
+************************************************************************/
+
+
+
+
+
+
+

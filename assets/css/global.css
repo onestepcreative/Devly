@@ -1,0 +1,935 @@
+
+/*
+	Author:  JOSH MCDONALD
+	Twitter: @onestepcreative
+	Website: onestepcreative.com
+
+
+	Color Palatte:
+
+	Devly Blue:		#2082AB;
+	Light Blue:		#50A5C8
+
+	Bright Red:		#D01212
+	Medium Gray:	#555555
+	Off Black:		#141414
+	Off White:		#EAEAEA
+	
+	This stylesheet contains most of the styles and 
+	defaults for the Devly Theme. Remember that this
+	theme uses a google webfont call 'Volkhov'. The
+	typeface is being loaded in from google in the
+	header.php file.
+
+*/
+
+/* ============================================ */
+/* ===== MISCELLANEOUS GLOBAL PAGE STYLES ===== */
+/* ============================================ */
+
+html { height: 100%; }
+
+body {
+	background: #FFF url(/wp-content/themes/devly/assets/img/ui/page-bg.png);
+	color: #666;
+	font: 14px/20px Helvetica, Sans-Serif;
+	text-rendering: geometricPrecision;
+	-ms-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+}
+
+a, a:visited, a:hover, a:active {
+	color: inherit;
+}
+
+a, a * {
+	text-decoration: none;
+    
+    transition: color .25s;
+    -o-transition: color .25s;
+    -ms-transition: color .25s;
+    -moz-transition: color .25s;
+    -webkit-transition: color .25s;
+}
+
+a:active {
+	transform: translateY(1px);
+	-o-transform: translateY(1px);
+	-ms-transform: translateY(1px);
+	-moz-transform: translateY(1px);
+	-webkit-transform: translateY(1px);
+}
+
+a:hover  {
+	color: #2082AB;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #333;
+	font-family: Helvetica, Sans-Serif;
+	font-weight: bold;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	text-decoration: none;
+}
+
+h1 {font-size: 36px; line-height: 42px;}
+h2 {font-size: 30px; line-height: 36px;}
+h3 {font-size: 24px; line-height: 30px;}
+h4 {font-size: 18px; line-height: 24px;}
+h5 {font-size: 16px; line-height: 22px;}
+h6 {font-size: 14px; line-height: 20px;}
+
+p { -webkit-hyphens: auto; -moz-hyphens: auto; -epub-hyphens: auto; hyphens: auto; }
+a:link, a:visited:link { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+img { height: auto!important; max-width: 100%; width: auto\9; }
+.sidebar ul, .sidebar ol, .commentlist { list-style: none; }
+b, strong, .strong { font-weight: bold; }
+dfn, em, .em { font-style: italic; }
+small, .small { font-size: 75%; }
+ul, ol { padding: 0; }
+dd { margin: 0; }
+
+
+/* =========================================================================
+/* ====== PAGE CONTAINERS & FRAMEWORKS ELEMENTS & STYLES  
+/* =======================================================================*/	
+
+
+#pageContainer {
+	margin: 0;
+	padding: 100px 0 0 0;
+}
+
+.wrap {
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+/* =========================================================================
+/* ====== DEVLY'S FIXED HEADER ELEMENTS & STYLES  
+/* =======================================================================*/
+
+
+#headerContainer {
+	background: #F3F3F3;
+	border-top: 5px solid #2082AB;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+	display: block;
+	height: 70px;
+	padding: 0;
+	position: fixed; top: 0; left: 0; right: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+#header {
+	display: block;
+	height: 70px;
+}
+
+#header #logoContainer {
+	display: block;
+	float: left;
+	height: 30px;
+	margin: 0;
+	padding: 20px 0;
+}
+
+#header #logo {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#header #logo a {
+	color: #555;
+	font: 600px 20px/30px;
+	text-shadow: 0 1px 0 #FFF;
+}
+
+#header #logo a:hover {
+	color: #2082AB;
+}
+
+#header .slogan {
+	color: #CCC;
+	display: block;
+	float: left;
+	font: italic lighter 12px/30px Volkhov, Serif;
+	margin: 0 0 0 10px;
+}
+
+#mainNav {
+	display: block;
+	height: 30px;
+	padding: 20px 0;
+	text-align: right;
+}
+
+.menu a {
+	color: #888;
+	font-weight: 600;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 15px;
+	text-decoration: none;
+}
+
+.menu a:hover {
+	color: #2082AB;
+}
+
+
+/* =========================================================================
+/* ====== MAIN PAGE CONTENT & LOOP ELEMENTS & STYLES  
+/* =======================================================================*/
+
+
+#contentContainer {
+	margin: 20px auto;
+}
+	
+#mainContent {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.articleContainer {
+	border-bottom: 1px dotted #CCC;
+	margin: 0 0 60px 0;
+	padding: 0 0 20px 0;
+	}
+	
+.postHeading {
+	display: block;
+	margin: 0 0 15px 0;
+	padding: 0;
+}
+
+a.readMore, a.readMore:visited {
+	background: #2082AB;
+	border: 1px solid #2193AB;
+	border-radius: 3px;
+	color: #FFF;
+	display: inline-block;
+	font-weight: 600;
+	height: 28px;
+	line-height: 28px;
+	margin: 20px 0 0 0;
+	padding: 0 10px;
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.readMore:active {
+	-webkit-transform: translateY(1px);
+}
+
+.postTitle {
+	color: #555;
+	display: block;
+	font: normal 600 28px/36px Helvetica, Sans-Serif;
+	margin: 0;
+	padding: 15px 0 5px 0;
+	}
+
+.postMeta {
+	color: #BBB;
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+	}
+	
+.postMeta a {
+	color: #50A5C8;
+}
+
+.postMeta a:hover {
+	color: #555;
+}
+
+.postContent { 
+	display: block;
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+
+.postContent dd {
+	margin-left: 0;
+	font-size: 0.9em;
+	color: #787878;
+	margin-bottom: 1.5em;
+	}
+
+.postContent img {
+	margin: 0 0 1.5em 0;
+	max-width: 100%;
+	}
+
+.postContent video,
+.postContent object {
+	max-width: 100%;
+	}
+
+.postContent pre,
+.postContent code {
+	background: #eee;
+	border: 1px solid #cecece;
+	padding: 10px;
+	}
+
+.wp-caption {
+	background: #eee;
+	padding: 5px;
+	}
+
+.wp-caption img {
+	margin-bottom: 0;
+	width: 100%;
+	}
+
+.wp-caption p.wp-caption-text {
+	font-size: 0.85em;
+	margin: 4px 0 7px;
+	text-align: center;
+	}
+
+	
+/* ======================================================= */
+/* ===== PAGE NAVIGTAION FOR POSTS ELEMENTS & STYLES ===== */
+/* ======================================================= */
+
+
+.pageNavigation {
+	display: block;
+	height: 30px;
+}
+
+.pageNavigation a {
+	background: #EEE;
+	border: 1px solid #DDD;
+	border-radius: 2px;
+	display: block;
+	float: left;
+	font-weight: 600;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 3px 0 0;
+	padding: 0 10px;
+	text-shadow: 0 1px 0 #FFF;
+}
+
+.pageNavigation .currentPage  {
+	background: #2082AB;
+	border: 1px solid #10719A;
+	border-radius: 2px;
+	color: #FFF;
+	display: block;
+	float: left;
+	font-weight: 600;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 3px 0 0;
+	padding: 0 10px;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.pageNavigation .nextPageLink a,
+.pageNavigation .prevPageLink a {
+	line-height: 27px;
+}
+
+/* =============================================== */
+/* ===== GLOBAL TYPOGRAPHY ELEMENTS & STYLES ===== */
+/* ================================================ */
+
+h2.postHeading, h2.pageHeading {
+	line-height: 36px;
+	margin: 0 0 5px 0;
+	padding: 0;
+	}
+
+h2.postHeading a, h2.pageHeading a {
+	color: #333;
+}
+
+h2.postHeading a:hover, h2.pageHeading a:hover {
+	color: #2082AB;
+}
+
+h3.comment-name {
+	font-size: 18px;
+	line-height: 38px;
+	margin: 0 20px 0 0;
+	padding: 0;
+	}
+
+h3.authorName {
+	font-size: 20px;
+	margin: 0 0 20px 0;
+	padding: 0;
+	}
+
+/* ============================================ */
+/* ===== SITES HOMEPAGE ELEMENTS & STYLES ===== */
+/* ============================================ */
+
+#sliderContainer {
+	background: #EEE;
+	display: block;
+	height: 400px;
+	margin: 0 0 25px 0;
+	padding: 0;
+	width: 100%;
+}
+
+
+
+/* ============================================= */
+/* ===== SIDEBAR (ASIDE) ELEMENTS & STYLES ===== */
+/* ============================================= */
+
+.widget ul li { }
+
+/* =============================================== */
+/* ===== AUTHOR BIO LAYOUT ELEMENTS & STYLES ===== */
+/* =============================================== */
+
+#authorBioContainer {
+	border: 1px dotted #CCC;
+	display: block;
+	float: left;
+	margin: 30px 0;
+	padding: 2% 2% 0 2%;
+	width: 96%;
+	}
+
+.gravatar {
+	display: block;
+	float: left;
+	width: 20%;
+	}
+
+.gravatar img {
+	border-radius: 50%;
+	margin: 0 0 0 10%;
+	padding: 0;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	}
+
+.aboutAuthor {
+	display: block;
+	float: left;
+	margin: 0 0 0 5%;
+	width: 75%;
+	}
+
+/* =========================================== */
+/* ===== COMMENTS LIST ELEMENTS & STYLES ===== */
+/* =========================================== */
+
+#commentsTitle {
+	color: #444;
+}
+
+#commentsTitle .commentsNumber {
+	color: #DDD;
+}
+
+.commentlist, .commentlist li {
+	list-style: none;
+}
+
+.commentContainer {
+	border: 1px solid #EEE;
+	margin: 0 0 25px 0;
+	padding: 3%;
+	position: relative;
+}
+
+.commentContainer.even {
+	background: #FAFAFA;
+}
+
+.commentContainer.odd {
+	background: #FFF;
+}
+	
+.commentAuthContainer {
+	border-bottom: 1px solid #F0F0F0;
+	display: block;
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+
+.commentAuthPhoto, .authorMeta {
+	display: block;
+	float: left;
+}
+
+.commentAuthPhoto {
+	margin: 0 2% 0 0;
+}
+
+.commentAuthPhoto img,
+.commentAuthPhoto .avatar,
+.commentAuthPhoto .gravatar {
+	border-radius: 50%;
+}
+
+.commentAuthName {
+	color: #555;
+	display: block;
+	float: left;
+	font-size: 18px;
+	line-height: 20px;
+	margin: 4px 0 0 0;
+	padding: 0;
+}
+
+.commentAuthName a {
+	display: block;
+	float: left;
+}
+
+.commentAuthName .emailAuth {
+	display: block;
+	float: left;
+	border-radius: 10px;
+	color: #2082AB;
+	font-size: 11px;
+	height: 10px;
+	line-height: 16px;
+	margin: 5px 0 0 5px;
+}
+
+.commentAuthName .emailAuth a {
+	display: block;
+	float: none;
+	line-height: 12px;
+	margin: 0 0 0 0;
+}
+
+.commentAuthName .emailAuth a:hover {
+	color: #BBB;
+}
+
+.commentContainer .datetime {
+	clear: both;
+}
+
+.commentInfo .datetime a {
+	color: #BBB;
+	font-size: 12px;
+	font-weight: lighter;
+}
+
+.commentInfo a.comment-edit-link {
+	float: right;
+	font-size: 11px;
+	line-height: 38px;
+	margin: 0 1% 0 0;
+}
+
+.commentInfo {
+	border-top: 1px solid #FFF;
+	display: block;
+	float: left;
+	margin: 0 15px 0 0;
+	padding: 15 0 0 0;
+	width: 100%;
+}
+
+.commentContent {
+	clear: both;
+	padding: 0;
+	}
+
+.commentMeta {
+	float: right;
+	}
+
+.comment-reply-link {
+	background-color: #EDEDED;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#EDEDED));
+	background-image: -webkit-linear-gradient(top, #FAFAFA, #EDEDED);
+	background-image: -moz-linear-gradient(top, #FAFAFA, #EDEDED);
+	background-image: -o-linear-gradient(top, #FAFAFA, #EDEDED);
+	background-image: -ms-linear-gradient(top, #FAFAFA, #EDEDED);
+	background-image: linear-gradient(top, #FAFAFA, #EDEDED);
+	border: 1px solid #BEBEBE;
+	border-radius: 3px;
+	color: #676767;
+	cursor: pointer;
+	display: inline-block;
+	font: 11px/11px Helvetica, Sans-Serif;
+	font-weight: bold;
+	height: 10px;
+	margin: 10px 0 0 0;
+	padding: 5px 10px;
+	text-decoration: none;
+	text-shadow: 0 1px 1px #FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+}
+
+.comment-reply-link:hover, .comment-reply-link:visited:hover,
+.comment-reply-link:focus, .comment-reply-link:visited:focus {
+	color: #676767;
+	border: 1px solid #BEBEBE;
+	background-color: #a9daf1;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#E5E5E5));
+	background-image: -webkit-linear-gradient(top, #FAFAFA, #E5E5E5);
+	background-image: -moz-linear-gradient(top, #FAFAFA, #E5E5E5);
+	background-image: -o-linear-gradient(top, #FAFAFA, #E5E5E5);
+	background-image: -ms-linear-gradient(top, #FAFAFA, #E5E5E5);
+	background-image: linear-gradient(top, #FAFAFA, #E5E5E5);
+}
+
+.comment-reply-link:active, .comment-reply-link:visited:active {
+	background-color: #FAFAFA;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#FAFAFA));
+	background-image: -webkit-linear-gradient(top, #EDEDED, #FAFAFA);
+	background-image: -moz-linear-gradient(top, #EDEDED, #FAFAFA);
+	background-image: -o-linear-gradient(top, #EDEDED, #FAFAFA);
+	background-image: -ms-linear-gradient(top, #EDEDED, #FAFAFA);
+	background-image: linear-gradient(top, #EDEDED, #FAFAFA);
+}
+
+/* ============================================= */
+/* ===== PAGE NAVIGATION ELEMENTS & STYLES ===== */
+/* ============================================= */
+
+.page-nav,
+.wp-prev-next {
+	margin: 1.1em 0 2.2em;
+	}
+
+.devly-page-nav { }
+
+.devly-page-nav li {
+	float: left;
+	margin-left: 10px;
+	}
+
+.devly-page-nav li a {
+	padding: 3px 6px;
+	display: block;
+	text-decoration: none;
+	position: relative;
+	}
+
+.devly-page-nav li a:hover,
+.devly-page-nav li a:focus {
+	color: #1568e5;
+	text-decoration: underline;
+	}
+
+.devly-page-nav li.bpn-current {
+	padding: 3px 6px;
+	border-bottom: 2px solid #1568e5;
+	position: relative;
+	}
+
+.devly-page-nav li.bpn-current a {
+	}
+
+.devly-page-nav li.bpn-prev-link,
+.devly-page-nav li.bpn-next-link {
+	font-weight: 700;
+	}
+
+.devly-page-nav li.bpn-prev-link a,
+.devly-page-nav li.bpn-next-link a {
+	padding: 0;
+	}
+
+.devly-page-nav li.bpn-prev-link a:hover,
+.devly-page-nav li.bpn-next-link a:hover,
+.devly-page-nav li.bpn-first-page-link a:hover,
+.devly-page-nav li.bpn-last-page-link a:hover {
+	background: none;
+	}
+
+.wp-prev-next .prev-link {
+	float: left;
+	}
+
+.wp-prev-next .next-link {
+	float: right;
+	}
+
+/* ============================================= */
+/* ===== COMMENT RESPOND ELEMENTS & STYLES ===== */
+/* ============================================= */
+
+.respond-form {
+	margin: 1.5em 10px;
+	padding-bottom: 2.2em;
+	}
+
+.respond-form form {
+	margin: 0.75em 0;
+	}
+
+.respond-form form li {
+	list-style-type: none;
+	clear: both;
+	margin-bottom: 0.7335em;
+	}
+
+.respond-form form li label,
+.respond-form form li small {
+	display: none;
+	}
+
+.respond-form form input[type=text],
+.respond-form form input[type=email],
+.respond-form form input[type=url],
+.respond-form form textarea {
+	background: #F5F5F5;
+	border: 1px solid #BEBEBE;
+	border-radius: 3px;
+	line-height: 1.5em;
+	padding: 3px 6px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	}
+
+.respond-form form input[type=text]:focus,
+.respond-form form input[type=email]:focus,
+.respond-form form input[type=url]:focus,
+.respond-form form textarea:focus {
+	background: #fff;
+	}
+
+.respond-form form input[type=text]:invalid,
+.respond-form form input[type=email]:invalid,
+.respond-form form input[type=url]:invalid,
+.respond-form form textarea:invalid {
+	outline: none;
+	border-color: #fbc2c4;
+	background-color: #f6e7eb;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	box-shadow: none;
+	}
+
+.respond-form form input[type=text],
+.respond-form form input[type=email],
+.respond-form form input[type=url] {
+	max-width: 400px;
+	min-width: 250px;
+	}
+
+.respond-form form textarea {
+	resize: none;
+	width: 97.3%;
+	height: 150px;
+	}
+
+#comment-form-title {
+	margin: 0 0 1.1em;
+	}
+
+#allowed_tags {
+	margin: 1.5em 10px 0.7335em 0;
+	}
+
+.nocomments {
+	margin: 0 20px 1.1em;
+	}
+
+/* ========================================= */
+/* ===== SITE FOOTER ELEMENTS & STYLES ===== */
+/* ========================================= */
+
+.footerContainer {
+	clear: both;
+}
+
+.attribution {
+	display: block;
+	height: 20px;
+	margin: 0;
+	padding: 10px 0;
+	text-align: center;
+	width: 100%;
+}
+
+/* ======================================================== */
+/* === DEFAULT HELP, INFO, ERROR, SUCCESS NOTIFICATIONS === */
+/* ======================================================== */
+
+.help, .info, .error, .success {
+	display: block;
+	font: 14px/22px Sans-Serif;
+	margin: 10px 0;
+	padding: 5px 20px;
+	border: 1px solid;
+	}
+
+.help p, .info p, .error p, .success p {
+	margin: 0;
+	padding: 0;
+	}
+
+.help {
+	border-color: #E6DB55;
+	background: lightYellow;
+	}
+
+.info {
+	border-color: #8CC0D7;
+	background: #FAFAFA;
+	}
+
+.error {
+	border-color: #F3ACAE;
+	background: #FFDCDD;
+	}
+
+.success {
+	border-color: #D7E3A5;
+	background: #F6FFD1;
+	}
+
+
+
+/* ============================================== */
+/* === DEFAULT BUTTON CLASS ELEMENTS & STYLES === */
+/* ============================================== */
+
+.button, .button:visited {
+	background-color: #EDEDED;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#EDEDED));
+	background-image: -webkit-linear-gradient(top, #FAFAFA, #EDEDED);
+	background-image: -moz-linear-gradient(top, #FAFAFA, #EDEDED);
+	background-image: -o-linear-gradient(top, #FAFAFA, #EDEDED);
+	background-image: -ms-linear-gradient(top, #FAFAFA, #EDEDED);
+	background-image: linear-gradient(top, #FAFAFA, #EDEDED);
+	border: 1px solid #BEBEBE;
+	border-radius: 3px;
+	color: #676767;
+	cursor: pointer;
+	display: inline-block;
+	font: 11px/20px Helvetica, Sans-Serif;
+	font-weight: bold;
+	margin: 0;
+	padding: 5px 10px;
+	text-decoration: none;
+	text-shadow: 0 1px 1px #FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	}
+
+.button:hover, .button:visited:hover,
+.button:focus, .button:visited:focus {
+	color: #676767;
+	border: 1px solid #BEBEBE;
+	background-color: #a9daf1;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#E5E5E5));
+	background-image: -webkit-linear-gradient(top, #FAFAFA, #E5E5E5);
+	background-image: -moz-linear-gradient(top, #FAFAFA, #E5E5E5);
+	background-image: -o-linear-gradient(top, #FAFAFA, #E5E5E5);
+	background-image: -ms-linear-gradient(top, #FAFAFA, #E5E5E5);
+	background-image: linear-gradient(top, #FAFAFA, #E5E5E5);
+	}
+
+.button:active, .button:visited:active {
+	background-color: #FAFAFA;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#FAFAFA));
+	background-image: -webkit-linear-gradient(top, #EDEDED, #FAFAFA);
+	background-image: -moz-linear-gradient(top, #EDEDED, #FAFAFA);
+	background-image: -o-linear-gradient(top, #EDEDED, #FAFAFA);
+	background-image: -ms-linear-gradient(top, #EDEDED, #FAFAFA);
+	background-image: linear-gradient(top, #EDEDED, #FAFAFA);
+	}
+
+/* ========================================= */
+/* === SIMPLE 404 PAGE ELEMENTS & STYLES === */
+/* ========================================= */
+
+.error404 {
+	background: url(/wp-content/themes/devly/assets/img/ui/error-bg.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.error404 hgroup {
+	color: #FFF;
+	margin: 100px 0 0 0;
+}
+
+.errorHeading {
+	color: #FFF;
+	display: block;
+	font: 800 48px/52px Helvetica, Sans-Serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.errorMessage {
+	color: #FFF;
+	display: block;
+	font: 400 24px/40px Helvetica, Sans-Serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.errorInteract {
+	color: #FFF;
+	display: block;
+	font: 400 18px/30px Helvetica, Sans-Serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.errorInteract a {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+.errorInteract a:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

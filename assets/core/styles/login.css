@@ -1,0 +1,179 @@
+
+/* =========================================================================
+/* ====== CUSTOM STYLES TO CREATE THE DEVLY LOGIN SCREEN 
+/* =======================================================================*/
+
+body.login {
+	background-image:url(/wp-content/themes/devly/assets/img/admin/login-bg.jpg)!important;
+	background-position:center center;
+	background-size:cover;
+}
+
+#login .message, #login #login_error {
+	display:none;
+}
+
+#login {
+	background:url(/wp-content/themes/devly/assets/img/admin/login-modal-bg.jpg) center center no-repeat;
+	background-size:380px 280px;
+	height:280px;
+	margin:-180px 0 0 -190px;
+	padding:0;
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:380px;
+	
+	box-shadow:0 0 30px rgba(0,0,0,0.4);
+	-moz-box-shadow:0 0 30px rgba(0,0,0,0.4);
+	-o-bbox-shadow:0 0 30px rgba(0,0,0,0.4);
+	-webkit-box-shadow:0 0 30px rgba(0,0,0,0.4);
+}
+
+.login h1 {
+	background:none;
+	background-size:380px 65px;
+	border-bottom:1px solid #DDD;
+	display:block;
+	height:65px;
+	margin:0;
+	padding:0;
+	width:380px;
+}
+
+.login h1 a {
+	background:none;
+	color:#555;
+	display:block;
+	font:600 30px/63px Helvetica,Sans-Serif;
+	height:65px;
+	margin:0 0 1px;
+	padding:0;
+	text-align:center;
+	text-decoration:none;
+	text-indent:0;
+	text-shadow:0 1px 0 #FFF;
+	text-transform:lowercase;
+	width:380px;
+}
+
+.login #login form {
+	box-shadow:0 0 15px rgba(0,0,0,0);
+	-moz-box-shadow:0 0 15px rgba(0,0,0,0);
+	-o-bbox-shadow:0 0 15px rgba(0,0,0,0);
+	-webkit-box-shadow:0 0 15px rgba(0,0,0,0);
+}
+
+#loginform {
+	background:none;
+	border-top:1px solid #FFF;
+	border:none;
+	display:block;
+	height:215px;
+	margin:0;
+	padding:0;
+	width:380px;
+	
+	border-radius:0;
+	-moz-border-radius:0;
+	-o-border-radius:0;
+	-webkit-border-radius:0;
+}
+
+#loginform label {
+	color:#EEE;
+	display:block;
+	margin:0 auto;
+	width:300px;
+}
+
+#loginform #user_login,#loginform #user_pass {
+	background:#FFF;
+	border:1px solid #D5D5D5;
+	display:block;
+	height:40px;
+	margin:0 auto;
+	padding:0 10px;
+	width:280px;
+}
+
+#loginform #user_login {
+	margin-top:10px;
+	-webkit-appearance:none;
+}
+
+#loginform #user_pass {
+	margin-top:0;
+	-webkit-appearance:none;
+}
+
+input:-webkit-autofill {
+	background-color:#FFF!important;
+}
+
+#loginform .forgetmenot {
+	display:block;
+	height:15px;
+	margin:34px 0 0 50px;
+	padding:0;
+	width:110px;
+}
+
+#loginform .forgetmenot label {
+	color:#999;
+}
+
+#loginform .submit #wp-submit {
+	background-color:#EEE;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#F5F5F5),to(#EEE));
+	background-image:-webkit-linear-gradient(top,#F5F5F5,#EEE);
+	background-image:-moz-linear-gradient(top,#F5F5F5,#EEE);
+	background-image:-o-linear-gradient(top,#F5F5F5,#EEE);
+	background-image:-ms-linear-gradient(top,#F5F5F5,#EEE);
+	background-image:linear-gradient(top,#F5F5F5,#EEE);
+	border:1px solid #BEBEBE;
+	border-radius:3px;
+	color:#444;
+	display:block;
+	font:600 16px/32px Helvetica,Sans-Serif;
+	height:32px;
+	margin:28px 50px 0 0;
+	padding:0;
+	text-shadow:0 1px 0 #FFF;
+	text-transform:lowercase;
+	width:90px;
+}
+
+#loginform .submit #wp-submit:active {
+	border:1px solid #bebebe;
+	
+	box-shadow:inset 0 1px 5px #bebebe;
+	-moz-box-shadow:inset 0 1px 5px #bebebe;
+	-webkit-box-shadow:inset 0 1px 5px #bebebe;
+}
+
+.login #nav a,.login #backtoblog a {
+	color:#EEE!important;
+	text-decoration:none;
+	text-shadow:none;
+}
+
+.login .message {
+	border-radius:5px;
+	display:block;
+	margin:0 0 15px;
+	
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+.login #nav {
+	margin:15px 0 0;
+	padding:0 10px;
+	text-align:center;
+}
+
+.login #backtoblog {
+	display:none;
+}

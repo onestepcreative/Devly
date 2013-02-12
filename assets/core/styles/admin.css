@@ -1,0 +1,420 @@
+/*
+
+	Author:   Josh McDonald
+	Twitter:  @onestepcreative
+	Website:  http://onestepcreative.com
+
+	This stylesheet contains styles for the
+	devly theme settings pages, as well as a
+	couple visual enhancments to other parts
+	of the admin. This also handles styles
+	for devly dashboard widgets.
+
+*/
+
+
+/* =========================================================================
+/* ====== DEVLY RSS DASHBOARD WIDGET ELEMENTS & STYLES  
+/* =======================================================================*/
+
+
+#dashboard-widgets .devlyFeedTitle { 
+	font-size: 14px;
+	margin: 5px 0;
+	padding: 0;  
+}
+
+#dashboard-widgets .devlyFeedDesc { 
+	border-bottom: 1px solid #E6E6E6;
+	margin: 0 0 12px 0;
+	padding: 0 0 12px 0; 
+}
+
+#dashboard-widgets .devlyFeedDesc:last-child {
+	border-bottom: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* =========================================================================
+/* ====== A COUPLE VISUAL ENHANCEMENTS TO THE ADMIN 
+/* =======================================================================*/
+
+
+.update-nag {display: none}
+
+.status-publish, .status-publish.alternate { background:#EDF8E7; }
+
+.status-draft, .status-draft.alternate { background:#E7F2F7; }
+
+.status-pending, .status-pending.alternate { background:#FFFDE7; }
+
+td.post_ready { position:relative; }
+
+.column-post_ready { width:80px; }
+
+.post_status_circle {
+	display:block;
+	background-color:#eee;
+	width:10px;
+	height:10px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	margin:2px 20px 0;
+}
+
+.post_status_circle.post_state_draft {
+	box-shadow:inset 0 1px 0 0 rgba(250,250,250,0.7),0 0 3px 2px rgba(226,0,0,0.2),inset 0 -1px 3px 0 rgba(0,0,0,0.2);
+	background-color:#8CC0D7;
+}
+
+.post_status_circle.post_state_pending {
+	box-shadow:inset 0 1px 0 0 rgba(250,250,250,0.7),0 0 3px 2px rgba(255,205,0,0.2),inset 0 -1px 3px 0 rgba(0,0,0,0.2);
+	background-color:#FC0;
+}
+
+.post_status_circle.post_state_publish {
+	box-shadow:inset 0 1px 0 0 rgba(250,250,250,0.7),0 0 3px 2px rgba(84,234,49,0.2),inset 0 -1px 3px 0 rgba(0,0,0,0.2);
+	background-color:#60EA40;
+}
+
+#metaLink,#metaSub {
+	height:40px;
+}
+
+#metaDesc {
+	height:70px;
+}
+
+.metaContainer {
+	margin:0;
+	padding:5px 0 4px;
+}
+
+#projectLink {
+	border:1px solid #DFDFDF;
+	border-radius:3px;
+	display:block;
+}
+
+
+/* =========================================================================
+/* ====== DEVLY TWITTER FEED DASHBOARD WIDGET ELEMENTS & STYLES  
+/* =======================================================================*/
+
+
+#devlyTwitterFeed {
+	min-height: 50px;
+}
+
+#dashboard-widgets #devlyTwitterFeed a {
+	text-decoration: none;
+}
+
+.tweetContainer {
+	border-bottom: 1px dotted #CCC;
+	display: block;
+	height: auto;
+	margin: 0;
+	min-height: 50px;
+	padding: 15px 0;
+}
+
+.tweetContainer:last-child {
+	border: none;
+}
+
+.tweetone {
+	display: block;
+	float: left;
+	height: 100%;
+	margin: 0 2% 0 0;
+	padding: 0;
+	width: 8%;
+}
+
+.tweettwo {
+	display: block;
+	float: left;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 80%;
+}
+
+.tweetContainer .tweetThumb {
+	background: #CCC;
+	border: 1px solid #DDD;
+	display: block;
+	float: left;
+	height: 48px;
+	margin: 0;
+	padding: 0;
+	widows: 48px;
+}
+
+#dashboard-widgets .tweetContainer .tweetName,
+#dashboard-widgets .tweetContainer .tweetName a {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	color: #333;
+	display: block;
+	float: left;
+	font: 14px/12px Helvetica, Sans-Serif;
+	font-weight: bold;
+	margin: 0 0 2px 0;
+	padding: 0;
+}
+
+#dashboard-widgets .tweetContainer .tweetName a:hover {
+	color: #21759B;
+}
+
+#dashboard-widgets .tweetContainer .tweetName .tweetHandle,
+#dashboard-widgets .tweetContainer .tweetName a .tweetHandle {
+	color: #999;
+	font-size: 12px;
+	font-weight: normal;
+	margin: 0 0 0 7px;
+}
+
+.tweetContainer .tweetText p {
+	display: block;
+	font: 14px/22px Helvetica, Sans-Serif;
+	margin: 0;
+	padding: 0;
+}
+
+.tweetConnect a {
+	color: #999;
+	display: inline-block;
+	font: 12px/20px Helvetica, Sans-Serif;
+	margin: 5px 0 0 0;
+}
+
+.tweetConnect a:hover {
+	color: #21759B;
+}
+
+.tweetReply {
+	color: #AAA;
+	display: inline;
+	margin: 0 0 0 5px;
+}
+
+.tweetReply span {
+	display: inline;
+	margin: 0 3px 0 0;
+}
+
+
+/* =========================================================================
+/* ====== DEVLY THEME SETTINGS ELEMENTS & STYLES  
+/* =======================================================================*/
+
+
+#devlySettingsContainer {
+	border:1px solid #DFDFDF;
+	border-radius:3px;
+	display:block;
+	height:auto;
+	margin:20px 0 20px 45px;
+	padding:0;
+	width:920px;
+}
+
+.inside img {
+	height:auto;
+	max-width:258px;
+}
+
+.devly-custom-fields label,.devly-event-fields label {
+	display:inline-block;
+	float:left;
+	line-height:25px;
+	width:70px;
+}
+
+.devly-custom-fields input,.devly-event-fields input {
+	background:#FFF;
+	border:1px solid #DFDFDF;
+	border-radius:3px;
+	display:inline-block;
+	float:left;
+	margin:0 0 5px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.devly-custom-fields input:focus,.devly-event-fields input:focus {
+	border:1px solid #BBB;
+}
+
+h3.devlyTypeTitle {
+	background-color:#F1F1F1;
+	background-image:-ms-linear-gradient(top,#F9F9F9,#ECECEC);
+	background-image:-moz-linear-gradient(top,#F9F9F9,#ECECEC);
+	background-image:-o-linear-gradient(top,#F9F9F9,#ECECEC);
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#F9F9F9),to(#ECECEC));
+	background-image:-webkit-linear-gradient(top,#F9F9F9,#ECECEC);
+	background-image:linear-gradient(top,#F9F9F9,#ECECEC);
+	border-bottom:1px solid #DFDFDF;
+	border-radius:3px 3px 0 0;
+	color:#3A3A3A;
+	display:block;
+	font:16px/36px Helvetica,Sans-Serif;
+	font-weight:700;
+	height:35px;
+	margin:0;
+	padding:0 10px;
+	text-align:left;
+	text-shadow:0 1px 1px #FFF;
+	width:900px;
+}
+
+.settings-header {
+	padding:25px 0;
+}
+
+.devlyOptionContainer {
+	border-bottom:1px solid #DFDFDF;
+	display:block;
+	margin:0;
+	padding:30px 0;
+	width:920px;
+}
+
+.devlyOptionContainer b {
+	color: #666;
+	font-weight: 600;
+}
+
+.devlyOptionInstructions {
+	border-bottom: 1px solid #DFDFDF;
+	display: block;
+	margin: 0;
+	padding: 20px 10px;
+	width: 900px;
+}
+
+h3.devlyFeatureTitle {
+	display:inline-block;
+	float:left;
+	font:12px/18px Helvetica,Sans-Serif;
+	font-weight:700;
+	margin:0;
+	padding:0 10px;
+	width:180px;
+}
+
+.devlyOptionContainer .devlyFeature {
+	display:block;
+	float:left;
+	margin:0 30px 0 0;
+	padding:0;
+}
+
+.devlyOptionContainer .devlyFeatureDesc {
+	color:#888;
+	display:inline-block;
+	font:10px/16px Helvetica,Sans-Serif;
+	width:340px;
+}
+
+.devlyOptionContainer select {
+	background:#F9F9F9;
+	color:#333;
+	line-height:1em;
+	padding:4px;
+	width:300px;
+}
+
+.devlyOptionContainer .devlyFeature input[type="text"],.devlyOptionContainer .text {
+	width:300px;
+}
+
+.devlyOptionContainer textarea {
+	height:130px;
+	width:300px;
+}
+
+.devlySaveSettings {
+	background-color:#F1F1F1;
+	background-image:-ms-linear-gradient(top,#F9F9F9,#ECECEC);
+	background-image:-moz-linear-gradient(top,#F9F9F9,#ECECEC);
+	background-image:-o-linear-gradient(top,#F9F9F9,#ECECEC);
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#F9F9F9),to(#ECECEC));
+	background-image:-webkit-linear-gradient(top,#F9F9F9,#ECECEC);
+	background-image:linear-gradient(top,#F9F9F9,#ECECEC);
+	border:1px solid #BBB;
+	border-radius:3px;
+	display:block;
+	float:right;
+	font:12px/27px Helvetica,Sans-Serif;
+	height:28px;
+	margin:0 15px 0 0;
+	padding:0 10px;
+}
+
+.devlySaveSettings:hover {
+	box-shadow:0 0 5px #CCC;
+	-moz-box-shadow:0 0 5px #CCC;
+	-webkit-box-shadow:0 0 5px #CCC;
+}
+
+.devlyButtonContainer {
+	display:block;
+	height:30px;
+	padding:15px 0;
+	width:920px;
+}
+
+h4.devlySavedSuccess {
+	background:#EBFAEB;
+	border:1px solid #80D280;
+	border-radius:3px;
+	color:#80D280;
+	display:block;
+	float:left;
+	font:12px/26px Helvetica,Sans-Serif;
+	font-weight:700;
+	height:26px;
+	margin:0 0 0 15px;
+	padding:0 20px 0 10px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+	width:auto;
+}
+
+h4.devlySavedSuccess img {
+	margin:-3px 5px 0 0;
+	vertical-align:middle;
+}
+
+
+/* =========================================== */
+/* ===== THEME SETTINGS CUSTOM MENU ICON ===== */
+/* =========================================== */
+
+
+#toplevel_page_theme-settings .wp-menu-image {
+	background:url(/wp-content/themes/devly/assets/img/admin/settings-icon.png) no-repeat 6px -17px!important;
+}
+
+#toplevel_page_theme-settings:hover .wp-menu-image,#toplevel_page_theme-settings.wp-has-current-submenu .wp-menu-image {
+	background-position:6px 7px!important;
+}
+
+#adminmenu #toplevel_page_theme-settings .wp-menu-image a img {
+	display:none;
+}
+
+.clearfix:before,.clearfix:after {
+	content:"";
+	display:table;
+}
+
+.clearfix:after {
+	clear:both;
+}
