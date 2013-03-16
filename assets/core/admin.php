@@ -292,4 +292,4 @@ add_filter('admin_footer_text', 'devlyAdminFooter');
 
 
 
-// END OF DEVLY ADMIN FILE ?>
+// END OF DEVLY ADMIN.PHP FILE ?>

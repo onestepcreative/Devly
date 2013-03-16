@@ -1,11 +1,14 @@
 <?php 
 
-/* POST ARCHIVES PAGE TEMPATE
+/* 
 
-This page serves as the template for
-all blog archives, and even custom post
-types, if you do not have a custom
-template set */
+	POST ARCHIVES PAGE TEMPATE
+	---
+	This page serves as the template for all 
+	blog archives, and even custom post types, if 
+	you do not have a custom template set. 
+
+*/
 
 
 get_header(); 
@@ -13,6 +16,7 @@ get_header();
 ?>
 
 <div id="contentContainer" class="wrap clearfix">
+
 	<div id="mainContent" class="eightcol clearfix">
 
 		<?php 
@@ -24,7 +28,7 @@ get_header();
 			
 			$permalink = get_permalink(); ?>
 
-			<article class="articleContainer clearfix" id="post-<?php the_ID(); ?>" data-id="<?php the_ID(); ?>" role="article">
+			<article class="articleContainer archive clearfix" id="post-<?php the_ID(); ?>" data-id="<?php the_ID(); ?>" role="article">
 	
 				<hgroup class="postHeading">
 					<h2 class="postTitle">

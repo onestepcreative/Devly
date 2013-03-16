@@ -20,13 +20,6 @@
 // INITIALIZE ALL OF THE DEVLY THEME AWESOMENESS
 add_action('after_setup_theme','devlyCoreBlastOff', 15);
 
-add_filter( 'show_admin_bar' , 'my_function_admin_bar');
-
-
-function my_function_admin_bar(){
-    return false;
-}
-
 
 // =========================================================================
 // ====== DEVLY CORE BLAST OFF: MOST FUNCTIONS + TOOLS  
@@ -35,7 +28,7 @@ function my_function_admin_bar(){
 
 function devlyCoreBlastOff() {
 	
-	// CLEANUP THE HEAD
+	// CLEANUP THE WORDPRESS HEAD
 	add_action('init', 'devlyCleanHead');
 	
 	// REMOVE WP VERSION FROM RSS
@@ -57,6 +50,9 @@ function devlyCoreBlastOff() {
 	
 	// LOAD THIS STUFF AFTER THEME SETUP
 	add_action('after_setup_theme', 'devlyThemeSupport');
+	
+	// HOOK UP OUR NEW METABOX HELPER CLASS
+	add_action('init', 'devlyMetaboxSetup', 9999);
 	
 	// ADDING A COUPLE OF SIDEBARS TO WORDPRESS
 	add_action('widgets_init', 'devlyRegisterSidebars');
@@ -103,7 +99,7 @@ function devlyCoreBlastOff() {
 // =========================================================================
 
 
-// CLEARN UP WORDPRESS HEAD
+// CLEAN UP WORDPRESS HEAD
 function devlyCleanHead() {
 
 	remove_action( 'wp_head', 'feed_links_extra', 3 );
@@ -215,6 +211,22 @@ function devlyThemeSupport() {
 			'footer_nav' 	=> 'Footer Menu'
 		)
 	);
+
+}
+
+
+// =========================================================================
+// ====== BUILD IN THE DEVLY METABOX HELPER
+// =========================================================================
+
+
+function devlyMetaboxSetup() {
+
+	if (!class_exists('Devly_Meta_Box')) {
+	
+		require_once 'assets/core/meta.php';
+
+	}
 
 }
 

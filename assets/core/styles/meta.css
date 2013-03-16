@@ -1,0 +1,1419 @@
+/**
+ * CMB Styling
+ */
+table.devlyMetabox td, table.devlyMetabox th {
+	border-bottom:1px solid #EEE;
+	padding: 20px 10px; 
+}
+
+table.devlyMetabox th {
+	font-weight:700;
+	text-align:right;
+}
+
+table.devlyMetabox th label {
+	display:block;
+	margin-top:10px;
+	text-shadow: 0 1px 0 #FFF;
+}
+
+table.devlyMetabox input.text {
+	height: 35px;
+	padding: 6px 10px 4px 10px;
+	width: 100%;
+}
+
+table.devlyMetabox .devlyDatePicker {
+	height: 30px;
+}
+
+p.devlyMetaboxDescription {
+	color:#AAA;
+	font-style:italic;
+	margin:2px 0!important;
+}
+
+span.devlyMetaboxDescription {
+	color:#CCC;
+	font-style:italic;
+}
+
+table.devlyMetabox input,table.devlyMetabox textarea {
+	font-size:12px;
+	padding:5px 10px;
+}
+
+table.devlyMetabox textarea {
+	width:100%;
+}
+
+table.devlyMetabox textarea.devlyCodeTextarea {
+	font-family:Consolas,Monaco,monospace;
+	line-height:16px;
+}
+
+table.devlyMetabox input.devlySmallText {
+	width:100px;
+	margin-right:15px;
+}
+
+table.devlyMetabox input.devlyTimePicker {
+	width:100px;
+	margin-right:15px;
+}
+
+table.devlyMetabox input.devlyMoneyText {
+	width:90px;
+	margin-right:15px;
+}
+
+table.devlyMetabox input.devlyMediumText {
+	width:230px;
+	margin-right:15px;
+}
+
+table.devlyMetabox input.devlyFileUpload {
+	width:65%;
+}
+
+table.devlyMetabox li {
+	font-size:12px;
+	margin:1px 0 5px;
+	line-height:16px;
+}
+
+table.devlyMetabox ul {
+	padding-top:5px;
+	margin:0;
+}
+
+table.devlyMetabox select {
+	font-size:12px;
+	margin-top:3px;
+}
+
+table.devlyMetabox input:focus,table.devlyMetabox textarea:focus {
+	background:#fffffA;
+}
+
+.devlyMetaboxTitle {
+	margin:0 0 5px;
+	padding:5px 0 0;
+	font:italic 24px/35px Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+}
+
+.devlyInlineRadio {
+	padding:4px 0 0;
+}
+
+.devlyInlineRadio_option {
+	display:inline;
+	padding-right:18px;
+}
+
+table.devlyMetabox input[type="radio"] {
+	margin:0 5px 0 0;
+	padding:0;
+}
+
+table.devlyMetabox input[type="checkbox"] {
+	margin:0 5px 0 0;
+	padding:0;
+}
+
+table.devlyMetabox .mceLayout {
+	border:1px solid #DFDFDF!important;
+}
+
+table.devlyMetabox .mceIframeContainer {
+	background:#FFF;
+}
+
+table.devlyMetabox .meta_mce {
+	width:97%;
+}
+
+table.devlyMetabox .meta_mce textarea {
+	width:100%;
+}
+
+table.devlyMetabox .devlyMediaStatus {
+	margin:10px 0 0;
+}
+
+table.devlyMetabox .devlyMediaStatus .img_status,table.devlyMetabox .devlyMediaStatus .embedStatus {
+	position:relative;
+}
+
+table.devlyMetabox .devlyMediaStatus .img_status img,table.devlyMetabox .devlyMediaStatus .embedStatus {
+	border:1px solid #DFDFDF;
+	background:#FAFAFA;
+	max-width:350px;
+	padding:5px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+}
+
+table.devlyMetabox .devlyMediaStatus .embedStatus {
+	float:left;
+	max-width:800px;
+}
+
+table.devlyMetabox .devlyMediaStatus .img_status .devlyRemoveFileButton,table.devlyMetabox .devlyMediaStatus .embedStatus .devlyRemoveFileButton {
+	text-indent:-9999px;
+	background:url(/wp-content/themes/devly/assets/img/admin/meta/ico-delete.png);
+	width:16px;
+	height:16px;
+	position:absolute;
+	top:-5px;
+	left:-5px;
+}
+
+/* Sidebar placement adjustments */
+.inner-sidebar table.devlyMetabox input[type=text],table.devlyMetabox textarea {
+	width:95%;
+}
+
+.inner-sidebar table.devlyMetabox .devlyMediaStatus .img_status img,.inner-sidebar table.devlyMetabox .devlyMediaStatus .embedStatus img {
+	width:90%;
+}
+
+.postbox table.devlyMetabox .devlySpinner {
+	float:left;
+}
+
+/**
+ * Timepicker
+ */
+div.time-picker {
+	position:absolute;
+	height:191px;
+	width:6em;
+/* needed for IE */
+	overflow:auto;
+	background:#fff;
+	border:1px solid #aaa;
+	z-index:99;
+	margin:0;
+}
+
+div.time-picker-12hours {
+	width:8em;
+/* needed for IE */
+}
+
+div.time-picker ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+div.time-picker li {
+	cursor:pointer;
+	height:10px;
+	font:12px/1 Helvetica,Arial,sans-serif;
+	padding:4px 3px;
+}
+
+div.time-picker li.selected {
+	background:#0063CE;
+	color:#fff;
+}
+
+/**
+ * jQuery UI CSS Framework 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ */
+.devlyElement .ui-helper-hidden {
+	display:none;
+}
+
+.devlyElement .ui-helper-hidden-accessible {
+	position:absolute!important;
+	clip:rect(1px 1px 1px 1px);
+	clip:rect(1px,1px,1px,1px);
+}
+
+.devlyElement .ui-helper-reset {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	line-height:1.3;
+	text-decoration:none;
+	font-size:100%;
+	list-style:none;
+}
+
+.devlyElement .ui-helper-clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+.devlyElement .ui-helper-clearfix {
+	display:inline-block;
+}
+
+* html .ui-helper-clearfix {
+	height:1%;
+}
+
+.devlyElement .ui-helper-clearfix {
+	display:block;
+}
+
+.devlyElement .ui-helper-zfix {
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	position:absolute;
+	opacity:0;
+	filter:Alpha(Opacity=0);
+}
+
+.devlyElement .ui-state-disabled {
+	cursor:default!important;
+}
+
+.devlyElement .ui-icon {
+	display:block;
+	text-indent:-99999px;
+	overflow:hidden;
+	background-repeat:no-repeat;
+}
+
+.devlyElement .ui-widget-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.devlyElement .ui-widget {
+	font-family:Verdana,Arial,sans-serif;
+	font-size:1.1em;
+}
+
+.devlyElement .ui-widget .ui-widget {
+	font-size:1em;
+}
+
+.devlyElement .ui-widget input,.devlyElement .ui-widget select,.devlyElement .ui-widget textarea,.devlyElement .ui-widget button {
+	font-family:Verdana,Arial,sans-serif;
+	font-size:1em;
+}
+
+.devlyElement .ui-widget-content {
+	border:1px solid #aaa;
+	background:#fff url(/wp-content/themes/devly/assets/img/admin/meta/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+	color:#222;
+}
+
+.devlyElement .ui-widget-content a {
+	color:#222;
+}
+
+.devlyElement .ui-widget-header {
+	border:1px solid #aaa;
+	background:#ccc url(/wp-content/themes/devly/assets/img/admin/meta/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;
+	color:#222;
+	font-weight:700;
+}
+
+.devlyElement .ui-widget-header a {
+	color:#222;
+}
+
+.devlyElement .ui-state-default,.devlyElement .ui-widget-content .ui-state-default,.devlyElement .ui-widget-header .ui-state-default {
+	border:1px solid #d3d3d3;
+	background:#e6e6e6 url(/wp-content/themes/devly/assets/img/admin/meta/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+	font-weight:400;
+	color:#555;
+}
+
+.devlyElement .ui-state-default a,.devlyElement .ui-state-default a:link,.devlyElement .ui-state-default a:visited {
+	color:#555;
+	text-decoration:none;
+}
+
+.devlyElement .ui-state-hover,.devlyElement .ui-widget-content .ui-state-hover,.devlyElement .ui-widget-header .ui-state-hover,.devlyElement .ui-state-focus,.devlyElement .ui-widget-content .ui-state-focus,.devlyElement .ui-widget-header .ui-state-focus {
+	border:1px solid #999;
+	background:#dadada url(/wp-content/themes/devly/assets/img/admin/meta/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x;
+	font-weight:400;
+	color:#212121;
+}
+
+.devlyElement .ui-state-hover a,.devlyElement .ui-state-hover a:hover {
+	color:#212121;
+	text-decoration:none;
+}
+
+.devlyElement .ui-state-active,.devlyElement .ui-widget-content .ui-state-active,.devlyElement .ui-widget-header .ui-state-active {
+	border:1px solid #aaa;
+	background:#fff url(/wp-content/themes/devly/assets/img/admin/meta/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+	font-weight:400;
+	color:#212121;
+}
+
+.devlyElement .ui-state-active a,.devlyElement .ui-state-active a:link,.devlyElement .ui-state-active a:visited {
+	color:#212121;
+	text-decoration:none;
+}
+
+.devlyElement .ui-widget :active {
+	outline:none;
+}
+
+.devlyElement .ui-state-highlight,.devlyElement .ui-widget-content .ui-state-highlight,.devlyElement .ui-widget-header .ui-state-highlight {
+	border:1px solid #fcefa1;
+	background:#fbf9ee url(/wp-content/themes/devly/assets/img/admin/meta/ui-bg_glass_55_fbf9ee_1x400.png) 50% 50% repeat-x;
+	color:#363636;
+}
+
+.devlyElement .ui-state-highlight a,.devlyElement .ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a {
+	color:#363636;
+}
+
+.devlyElement .ui-state-error,.devlyElement .ui-widget-content .ui-state-error,.devlyElement .ui-widget-header .ui-state-error {
+	border:1px solid #cd0a0a;
+	background:#fef1ec url(/wp-content/themes/devly/assets/img/admin/meta/ui-bg_glass_95_fef1ec_1x400.png) 50% 50% repeat-x;
+	color:#cd0a0a;
+}
+
+.devlyElement .ui-state-error a,.devlyElement .ui-widget-content .ui-state-error a,.devlyElement .ui-widget-header .ui-state-error a {
+	color:#cd0a0a;
+}
+
+.devlyElement .ui-state-error-text,.devlyElement .ui-widget-content .ui-state-error-text,.devlyElement .ui-widget-header .ui-state-error-text {
+	color:#cd0a0a;
+}
+
+.devlyElement .ui-priority-primary,.devlyElement .ui-widget-content .ui-priority-primary,.devlyElement .ui-widget-header .ui-priority-primary {
+	font-weight:700;
+}
+
+.devlyElement .ui-priority-secondary,.devlyElement .ui-widget-content .ui-priority-secondary,.ui-widget-header .ui-priority-secondary {
+	opacity:.7;
+	filter:Alpha(Opacity=70);
+	font-weight:400;
+}
+
+.devlyElement .ui-state-disabled,.devlyElement .ui-widget-content .ui-state-disabled,.devlyElement .ui-widget-header .ui-state-disabled {
+	opacity:.35;
+	filter:Alpha(Opacity=35);
+	background-image:none;
+}
+
+.devlyElement .ui-icon {
+	width:16px;
+	height:16px;
+	background-image:url(/wp-content/themes/devly/assets/img/admin/meta/ui-icons_222222_256x240.png);
+}
+
+.devlyElement .ui-widget-content .ui-icon {
+	background-image:url(/wp-content/themes/devly/assets/img/admin/meta/ui-icons_222222_256x240.png);
+}
+
+.devlyElement .ui-widget-header .ui-icon {
+	background-image:url(/wp-content/themes/devly/assets/img/admin/meta/ui-icons_222222_256x240.png);
+}
+
+.devlyElement .ui-state-default .ui-icon {
+	background-image:url(/wp-content/themes/devly/assets/img/admin/meta/ui-icons_888888_256x240.png);
+}
+
+.devlyElement .ui-state-hover .ui-icon,.devlyElement .ui-state-focus .ui-icon {
+	background-image:url(/wp-content/themes/devly/assets/img/admin/meta/ui-icons_454545_256x240.png);
+}
+
+.devlyElement .ui-state-active .ui-icon {
+	background-image:url(/wp-content/themes/devly/assets/img/admin/meta/ui-icons_454545_256x240.png);
+}
+
+.devlyElement .ui-state-highlight .ui-icon {
+	background-image:url(/wp-content/themes/devly/assets/img/admin/meta/ui-icons_2e83ff_256x240.png);
+}
+
+.devlyElement .ui-state-error .ui-icon,.devlyElement .ui-state-error-text .ui-icon {
+	background-image:url(/wp-content/themes/devly/assets/img/admin/meta/ui-icons_cd0a0a_256x240.png);
+}
+
+.devlyElement .ui-icon-carat-1-n {
+	background-position:0 0;
+}
+
+.devlyElement .ui-icon-carat-1-ne {
+	background-position:-16px 0;
+}
+
+.devlyElement .ui-icon-carat-1-e {
+	background-position:-32px 0;
+}
+
+.devlyElement .ui-icon-carat-1-se {
+	background-position:-48px 0;
+}
+
+.devlyElement .ui-icon-carat-1-s {
+	background-position:-64px 0;
+}
+
+.devlyElement .ui-icon-carat-1-sw {
+	background-position:-80px 0;
+}
+
+.devlyElement .ui-icon-carat-1-w {
+	background-position:-96px 0;
+}
+
+.devlyElement .ui-icon-carat-1-nw {
+	background-position:-112px 0;
+}
+
+.devlyElement .ui-icon-carat-2-n-s {
+	background-position:-128px 0;
+}
+
+.devlyElement .ui-icon-carat-2-e-w {
+	background-position:-144px 0;
+}
+
+.devlyElement .ui-icon-triangle-1-n {
+	background-position:0 -16px;
+}
+
+.devlyElement .ui-icon-triangle-1-ne {
+	background-position:-16px -16px;
+}
+
+.devlyElement .ui-icon-triangle-1-e {
+	background-position:-32px -16px;
+}
+
+.devlyElement .ui-icon-triangle-1-se {
+	background-position:-48px -16px;
+}
+
+.devlyElement .ui-icon-triangle-1-s {
+	background-position:-64px -16px;
+}
+
+.devlyElement .ui-icon-triangle-1-sw {
+	background-position:-80px -16px;
+}
+
+.devlyElement .ui-icon-triangle-1-w {
+	background-position:-96px -16px;
+}
+
+.devlyElement .ui-icon-triangle-1-nw {
+	background-position:-112px -16px;
+}
+
+.devlyElement .ui-icon-triangle-2-n-s {
+	background-position:-128px -16px;
+}
+
+.devlyElement .ui-icon-triangle-2-e-w {
+	background-position:-144px -16px;
+}
+
+.devlyElement .ui-icon-arrow-1-n {
+	background-position:0 -32px;
+}
+
+.devlyElement .ui-icon-arrow-1-ne {
+	background-position:-16px -32px;
+}
+
+.devlyElement .ui-icon-arrow-1-e {
+	background-position:-32px -32px;
+}
+
+.devlyElement .ui-icon-arrow-1-se {
+	background-position:-48px -32px;
+}
+
+.devlyElement .ui-icon-arrow-1-s {
+	background-position:-64px -32px;
+}
+
+.devlyElement .ui-icon-arrow-1-sw {
+	background-position:-80px -32px;
+}
+
+.devlyElement .ui-icon-arrow-1-w {
+	background-position:-96px -32px;
+}
+
+.devlyElement .ui-icon-arrow-1-nw {
+	background-position:-112px -32px;
+}
+
+.devlyElement .ui-icon-arrow-2-n-s {
+	background-position:-128px -32px;
+}
+
+.devlyElement .ui-icon-arrow-2-ne-sw {
+	background-position:-144px -32px;
+}
+
+.devlyElement .ui-icon-arrow-2-e-w {
+	background-position:-160px -32px;
+}
+
+.devlyElement .ui-icon-arrow-2-se-nw {
+	background-position:-176px -32px;
+}
+
+.devlyElement .ui-icon-arrowstop-1-n {
+	background-position:-192px -32px;
+}
+
+.devlyElement .ui-icon-arrowstop-1-e {
+	background-position:-208px -32px;
+}
+
+.devlyElement .ui-icon-arrowstop-1-s {
+	background-position:-224px -32px;
+}
+
+.devlyElement .ui-icon-arrowstop-1-w {
+	background-position:-240px -32px;
+}
+
+.devlyElement .ui-icon-arrowthick-1-n {
+	background-position:0 -48px;
+}
+
+.devlyElement .ui-icon-arrowthick-1-ne {
+	background-position:-16px -48px;
+}
+
+.devlyElement .ui-icon-arrowthick-1-e {
+	background-position:-32px -48px;
+}
+
+.devlyElement .ui-icon-arrowthick-1-se {
+	background-position:-48px -48px;
+}
+
+.devlyElement .ui-icon-arrowthick-1-s {
+	background-position:-64px -48px;
+}
+
+.devlyElement .ui-icon-arrowthick-1-sw {
+	background-position:-80px -48px;
+}
+
+.devlyElement .ui-icon-arrowthick-1-w {
+	background-position:-96px -48px;
+}
+
+.devlyElement .ui-icon-arrowthick-1-nw {
+	background-position:-112px -48px;
+}
+
+.devlyElement .ui-icon-arrowthick-2-n-s {
+	background-position:-128px -48px;
+}
+
+.devlyElement .ui-icon-arrowthick-2-ne-sw {
+	background-position:-144px -48px;
+}
+
+.devlyElement .ui-icon-arrowthick-2-e-w {
+	background-position:-160px -48px;
+}
+
+.devlyElement .ui-icon-arrowthick-2-se-nw {
+	background-position:-176px -48px;
+}
+
+.devlyElement .ui-icon-arrowthickstop-1-n {
+	background-position:-192px -48px;
+}
+
+.devlyElement .ui-icon-arrowthickstop-1-e {
+	background-position:-208px -48px;
+}
+
+.devlyElement .ui-icon-arrowthickstop-1-s {
+	background-position:-224px -48px;
+}
+
+.devlyElement .ui-icon-arrowthickstop-1-w {
+	background-position:-240px -48px;
+}
+
+.devlyElement .ui-icon-arrowreturnthick-1-w {
+	background-position:0 -64px;
+}
+
+.devlyElement .ui-icon-arrowreturnthick-1-n {
+	background-position:-16px -64px;
+}
+
+.devlyElement .ui-icon-arrowreturnthick-1-e {
+	background-position:-32px -64px;
+}
+
+.devlyElement .ui-icon-arrowreturnthick-1-s {
+	background-position:-48px -64px;
+}
+
+.devlyElement .ui-icon-arrowreturn-1-w {
+	background-position:-64px -64px;
+}
+
+.devlyElement .ui-icon-arrowreturn-1-n {
+	background-position:-80px -64px;
+}
+
+.devlyElement .ui-icon-arrowreturn-1-e {
+	background-position:-96px -64px;
+}
+
+.devlyElement .ui-icon-arrowreturn-1-s {
+	background-position:-112px -64px;
+}
+
+.devlyElement .ui-icon-arrowrefresh-1-w {
+	background-position:-128px -64px;
+}
+
+.devlyElement .ui-icon-arrowrefresh-1-n {
+	background-position:-144px -64px;
+}
+
+.devlyElement .ui-icon-arrowrefresh-1-e {
+	background-position:-160px -64px;
+}
+
+.devlyElement .ui-icon-arrowrefresh-1-s {
+	background-position:-176px -64px;
+}
+
+.devlyElement .ui-icon-arrow-4 {
+	background-position:0 -80px;
+}
+
+.devlyElement .ui-icon-arrow-4-diag {
+	background-position:-16px -80px;
+}
+
+.devlyElement .ui-icon-extlink {
+	background-position:-32px -80px;
+}
+
+.devlyElement .ui-icon-newwin {
+	background-position:-48px -80px;
+}
+
+.devlyElement .ui-icon-refresh {
+	background-position:-64px -80px;
+}
+
+.devlyElement .ui-icon-shuffle {
+	background-position:-80px -80px;
+}
+
+.devlyElement .ui-icon-transfer-e-w {
+	background-position:-96px -80px;
+}
+
+.devlyElement .ui-icon-transferthick-e-w {
+	background-position:-112px -80px;
+}
+
+.devlyElement .ui-icon-folder-collapsed {
+	background-position:0 -96px;
+}
+
+.devlyElement .ui-icon-folder-open {
+	background-position:-16px -96px;
+}
+
+.devlyElement .ui-icon-document {
+	background-position:-32px -96px;
+}
+
+.devlyElement .ui-icon-document-b {
+	background-position:-48px -96px;
+}
+
+.devlyElement .ui-icon-note {
+	background-position:-64px -96px;
+}
+
+.devlyElement .ui-icon-mail-closed {
+	background-position:-80px -96px;
+}
+
+.devlyElement .ui-icon-mail-open {
+	background-position:-96px -96px;
+}
+
+.devlyElement .ui-icon-suitcase {
+	background-position:-112px -96px;
+}
+
+.devlyElement .ui-icon-comment {
+	background-position:-128px -96px;
+}
+
+.devlyElement .ui-icon-person {
+	background-position:-144px -96px;
+}
+
+.devlyElement .ui-icon-print {
+	background-position:-160px -96px;
+}
+
+.devlyElement .ui-icon-trash {
+	background-position:-176px -96px;
+}
+
+.devlyElement .ui-icon-locked {
+	background-position:-192px -96px;
+}
+
+.devlyElement .ui-icon-unlocked {
+	background-position:-208px -96px;
+}
+
+.devlyElement .ui-icon-bookmark {
+	background-position:-224px -96px;
+}
+
+.devlyElement .ui-icon-tag {
+	background-position:-240px -96px;
+}
+
+.devlyElement .ui-icon-home {
+	background-position:0 -112px;
+}
+
+.devlyElement .ui-icon-flag {
+	background-position:-16px -112px;
+}
+
+.devlyElement .ui-icon-calendar {
+	background-position:-32px -112px;
+}
+
+.devlyElement .ui-icon-cart {
+	background-position:-48px -112px;
+}
+
+.devlyElement .ui-icon-pencil {
+	background-position:-64px -112px;
+}
+
+.devlyElement .ui-icon-clock {
+	background-position:-80px -112px;
+}
+
+.devlyElement .ui-icon-disk {
+	background-position:-96px -112px;
+}
+
+.devlyElement .ui-icon-calculator {
+	background-position:-112px -112px;
+}
+
+.devlyElement .ui-icon-zoomin {
+	background-position:-128px -112px;
+}
+
+.devlyElement .ui-icon-zoomout {
+	background-position:-144px -112px;
+}
+
+.devlyElement .ui-icon-search {
+	background-position:-160px -112px;
+}
+
+.devlyElement .ui-icon-wrench {
+	background-position:-176px -112px;
+}
+
+.devlyElement .ui-icon-gear {
+	background-position:-192px -112px;
+}
+
+.devlyElement .ui-icon-heart {
+	background-position:-208px -112px;
+}
+
+.devlyElement .ui-icon-star {
+	background-position:-224px -112px;
+}
+
+.devlyElement .ui-icon-link {
+	background-position:-240px -112px;
+}
+
+.devlyElement .ui-icon-cancel {
+	background-position:0 -128px;
+}
+
+.devlyElement .ui-icon-plus {
+	background-position:-16px -128px;
+}
+
+.devlyElement .ui-icon-plusthick {
+	background-position:-32px -128px;
+}
+
+.devlyElement .ui-icon-minus {
+	background-position:-48px -128px;
+}
+
+.devlyElement .ui-icon-minusthick {
+	background-position:-64px -128px;
+}
+
+.devlyElement .ui-icon-close {
+	background-position:-80px -128px;
+}
+
+.devlyElement .ui-icon-closethick {
+	background-position:-96px -128px;
+}
+
+.devlyElement .ui-icon-key {
+	background-position:-112px -128px;
+}
+
+.devlyElement .ui-icon-lightbulb {
+	background-position:-128px -128px;
+}
+
+.devlyElement .ui-icon-scissors {
+	background-position:-144px -128px;
+}
+
+.devlyElement .ui-icon-clipboard {
+	background-position:-160px -128px;
+}
+
+.devlyElement .ui-icon-copy {
+	background-position:-176px -128px;
+}
+
+.devlyElement .ui-icon-contact {
+	background-position:-192px -128px;
+}
+
+.devlyElement .ui-icon-image {
+	background-position:-208px -128px;
+}
+
+.devlyElement .ui-icon-video {
+	background-position:-224px -128px;
+}
+
+.devlyElement .ui-icon-script {
+	background-position:-240px -128px;
+}
+
+.devlyElement .ui-icon-alert {
+	background-position:0 -144px;
+}
+
+.devlyElement .ui-icon-info {
+	background-position:-16px -144px;
+}
+
+.devlyElement .ui-icon-notice {
+	background-position:-32px -144px;
+}
+
+.devlyElement .ui-icon-help {
+	background-position:-48px -144px;
+}
+
+.devlyElement .ui-icon-check {
+	background-position:-64px -144px;
+}
+
+.devlyElement .ui-icon-bullet {
+	background-position:-80px -144px;
+}
+
+.devlyElement .ui-icon-radio-off {
+	background-position:-96px -144px;
+}
+
+.devlyElement .ui-icon-radio-on {
+	background-position:-112px -144px;
+}
+
+.devlyElement .ui-icon-pin-w {
+	background-position:-128px -144px;
+}
+
+.devlyElement .ui-icon-pin-s {
+	background-position:-144px -144px;
+}
+
+.devlyElement .ui-icon-play {
+	background-position:0 -160px;
+}
+
+.devlyElement .ui-icon-pause {
+	background-position:-16px -160px;
+}
+
+.devlyElement .ui-icon-seek-next {
+	background-position:-32px -160px;
+}
+
+.devlyElement .ui-icon-seek-prev {
+	background-position:-48px -160px;
+}
+
+.devlyElement .ui-icon-seek-end {
+	background-position:-64px -160px;
+}
+
+.devlyElement .ui-icon-seek-start {
+	background-position:-80px -160px;
+}
+
+.devlyElement .ui-icon-seek-first {
+	background-position:-80px -160px;
+}
+
+.devlyElement .ui-icon-stop {
+	background-position:-96px -160px;
+}
+
+.devlyElement .ui-icon-eject {
+	background-position:-112px -160px;
+}
+
+.devlyElement .ui-icon-volume-off {
+	background-position:-128px -160px;
+}
+
+.devlyElement .ui-icon-volume-on {
+	background-position:-144px -160px;
+}
+
+.devlyElement .ui-icon-power {
+	background-position:0 -176px;
+}
+
+.devlyElement .ui-icon-signal-diag {
+	background-position:-16px -176px;
+}
+
+.devlyElement .ui-icon-signal {
+	background-position:-32px -176px;
+}
+
+.devlyElement .ui-icon-battery-0 {
+	background-position:-48px -176px;
+}
+
+.devlyElement .ui-icon-battery-1 {
+	background-position:-64px -176px;
+}
+
+.devlyElement .ui-icon-battery-2 {
+	background-position:-80px -176px;
+}
+
+.devlyElement .ui-icon-battery-3 {
+	background-position:-96px -176px;
+}
+
+.devlyElement .ui-icon-circle-plus {
+	background-position:0 -192px;
+}
+
+.devlyElement .ui-icon-circle-minus {
+	background-position:-16px -192px;
+}
+
+.devlyElement .ui-icon-circle-close {
+	background-position:-32px -192px;
+}
+
+.devlyElement .ui-icon-circle-triangle-e {
+	background-position:-48px -192px;
+}
+
+.devlyElement .ui-icon-circle-triangle-s {
+	background-position:-64px -192px;
+}
+
+.devlyElement .ui-icon-circle-triangle-w {
+	background-position:-80px -192px;
+}
+
+.devlyElement .ui-icon-circle-triangle-n {
+	background-position:-96px -192px;
+}
+
+.devlyElement .ui-icon-circle-arrow-e {
+	background-position:-112px -192px;
+}
+
+.devlyElement .ui-icon-circle-arrow-s {
+	background-position:-128px -192px;
+}
+
+.devlyElement .ui-icon-circle-arrow-w {
+	background-position:-144px -192px;
+}
+
+.devlyElement .ui-icon-circle-arrow-n {
+	background-position:-160px -192px;
+}
+
+.devlyElement .ui-icon-circle-zoomin {
+	background-position:-176px -192px;
+}
+
+.devlyElement .ui-icon-circle-zoomout {
+	background-position:-192px -192px;
+}
+
+.devlyElement .ui-icon-circle-check {
+	background-position:-208px -192px;
+}
+
+.devlyElement .ui-icon-circlesmall-plus {
+	background-position:0 -208px;
+}
+
+.devlyElement .ui-icon-circlesmall-minus {
+	background-position:-16px -208px;
+}
+
+.devlyElement .ui-icon-circlesmall-close {
+	background-position:-32px -208px;
+}
+
+.devlyElement .ui-icon-squaresmall-plus {
+	background-position:-48px -208px;
+}
+
+.devlyElement .ui-icon-squaresmall-minus {
+	background-position:-64px -208px;
+}
+
+.devlyElement .ui-icon-squaresmall-close {
+	background-position:-80px -208px;
+}
+
+.devlyElement .ui-icon-grip-dotted-vertical {
+	background-position:0 -224px;
+}
+
+.devlyElement .ui-icon-grip-dotted-horizontal {
+	background-position:-16px -224px;
+}
+
+.devlyElement .ui-icon-grip-solid-vertical {
+	background-position:-32px -224px;
+}
+
+.devlyElement .ui-icon-grip-solid-horizontal {
+	background-position:-48px -224px;
+}
+
+.devlyElement .ui-icon-gripsmall-diagonal-se {
+	background-position:-64px -224px;
+}
+
+.devlyElement .ui-icon-grip-diagonal-se {
+	background-position:-80px -224px;
+}
+
+.devlyElement .ui-corner-all,.devlyElement .ui-corner-top,.devlyElement .ui-corner-left,.devlyElement .ui-corner-tl {
+	-moz-border-radius-topleft:4px;
+	-webkit-border-top-left-radius:4px;
+	-khtml-border-top-left-radius:4px;
+	border-top-left-radius:4px;
+}
+
+.devlyElement .ui-corner-all,.devlyElement .ui-corner-top,.devlyElement .ui-corner-right,.devlyElement .ui-corner-tr {
+	-moz-border-radius-topright:4px;
+	-webkit-border-top-right-radius:4px;
+	-khtml-border-top-right-radius:4px;
+	border-top-right-radius:4px;
+}
+
+.devlyElement .ui-corner-all,.devlyElement .ui-corner-bottom,.devlyElement .ui-corner-left,.devlyElement .ui-corner-bl {
+	-moz-border-radius-bottomleft:4px;
+	-webkit-border-bottom-left-radius:4px;
+	-khtml-border-bottom-left-radius:4px;
+	border-bottom-left-radius:4px;
+}
+
+.devlyElement .ui-corner-all,.devlyElement .ui-corner-bottom,.devlyElement .ui-corner-right,.devlyElement .ui-corner-br {
+	-moz-border-radius-bottomright:4px;
+	-webkit-border-bottom-right-radius:4px;
+	-khtml-border-bottom-right-radius:4px;
+	border-bottom-right-radius:4px;
+}
+
+.devlyElement .ui-widget-overlay {
+	background:#aaa url(/wp-content/themes/devly/assets/img/admin/meta/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;
+	opacity:.3;
+	filter:Alpha(Opacity=30);
+}
+
+.devlyElement .ui-widget-shadow {
+	margin:-8px 0 0 -8px;
+	padding:8px;
+	background:#aaa url(/wp-content/themes/devly/assets/img/admin/meta/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;
+	opacity:.3;
+	filter:Alpha(Opacity=30);
+	-moz-border-radius:8px;
+	-khtml-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+}
+
+.devlyElement .ui-datepicker {
+	width:17em;
+	padding:.2em .2em 0;
+	display:none;
+}
+
+.devlyElement .ui-datepicker .ui-datepicker-header {
+	position:relative;
+	padding:.2em 0;
+}
+
+.devlyElement .ui-datepicker .ui-datepicker-prev,.devlyElement .ui-datepicker .ui-datepicker-next {
+	position:absolute;
+	top:2px;
+	width:1.8em;
+	height:1.8em;
+}
+
+.devlyElement .ui-datepicker .ui-datepicker-prev-hover,.devlyElement .ui-datepicker .ui-datepicker-next-hover {
+	top:1px;
+}
+
+.devlyElement .ui-datepicker .ui-datepicker-prev {
+	left:2px;
+}
+
+.devlyElement .ui-datepicker .ui-datepicker-next {
+	right:2px;
+}
+
+.devlyElement .ui-datepicker .ui-datepicker-prev-hover {
+	left:1px;
+}
+
+.devlyElement .ui-datepicker .ui-datepicker-next-hover {
+	right:1px;
+}
+
+.devlyElement .ui-datepicker .ui-datepicker-prev span,.devlyElement .ui-datepicker .ui-datepicker-next span {
+	display:block;
+	position:absolute;
+	left:50%;
+	margin-left:-8px;
+	top:50%;
+	margin-top:-8px;
+}
+
+.devlyElement .ui-datepicker .ui-datepicker-title {
+	margin:0 2.3em;
+	line-height:1.8em;
+	text-align:center;
+}
+
+.devlyElement .ui-datepicker .ui-datepicker-title select {
+	font-size:1em;
+	margin:1px 0;
+}
+
+.devlyElement .ui-datepicker select.ui-datepicker-month-year {
+	width:100%;
+}
+
+.devlyElement .ui-datepicker select.ui-datepicker-month,.devlyElement .ui-datepicker select.ui-datepicker-year {
+	width:49%;
+}
+
+.devlyElement .ui-datepicker table {
+	width:100%;
+	font-size:.9em;
+	border-collapse:collapse;
+	margin:0 0 .4em;
+}
+
+.devlyElement .ui-datepicker th {
+	padding:.7em .3em;
+	text-align:center;
+	font-weight:700;
+	border:0;
+}
+
+.devlyElement .ui-datepicker td {
+	border:0;
+	padding:1px;
+}
+
+.devlyElement .ui-datepicker td span,.devlyElement .ui-datepicker td a {
+	display:block;
+	padding:.2em;
+	text-align:right;
+	text-decoration:none;
+}
+
+.devlyElement .ui-datepicker .ui-datepicker-buttonpane {
+	background-image:none;
+	margin:.7em 0 0;
+	padding:0 .2em;
+	border-left:0;
+	border-right:0;
+	border-bottom:0;
+}
+
+.devlyElement .ui-datepicker .ui-datepicker-buttonpane button {
+	float:right;
+	margin:.5em .2em .4em;
+	cursor:pointer;
+	padding:.2em .6em .3em;
+	width:auto;
+	overflow:visible;
+}
+
+.devlyElement .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float:left;
+}
+
+.devlyElement .ui-datepicker.ui-datepicker-multi {
+	width:auto;
+}
+
+.devlyElement .ui-datepicker-multi .ui-datepicker-group {
+	float:left;
+}
+
+.devlyElement .ui-datepicker-multi .ui-datepicker-group table {
+	width:95%;
+	margin:0 auto .4em;
+}
+
+.devlyElement .ui-datepicker-multi-2 .ui-datepicker-group {
+	width:50%;
+}
+
+.devlyElement .ui-datepicker-multi-3 .ui-datepicker-group {
+	width:33.3%;
+}
+
+.devlyElement .ui-datepicker-multi-4 .ui-datepicker-group {
+	width:25%;
+}
+
+.devlyElement .ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header {
+	border-left-width:0;
+}
+
+.devlyElement .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+	border-left-width:0;
+}
+
+.devlyElement .ui-datepicker-multi .ui-datepicker-buttonpane {
+	clear:left;
+}
+
+.devlyElement .ui-datepicker-row-break {
+	clear:both;
+	width:100%;
+	font-size:0;
+}
+
+.devlyElement .ui-datepicker-rtl {
+	direction:rtl;
+}
+
+.devlyElement .ui-datepicker-rtl .ui-datepicker-prev {
+	right:2px;
+	left:auto;
+}
+
+.devlyElement .ui-datepicker-rtl .ui-datepicker-next {
+	left:2px;
+	right:auto;
+}
+
+.devlyElement .ui-datepicker-rtl .ui-datepicker-prev:hover {
+	right:1px;
+	left:auto;
+}
+
+.devlyElement .ui-datepicker-rtl .ui-datepicker-next:hover {
+	left:1px;
+	right:auto;
+}
+
+.devlyElement .ui-datepicker-rtl .ui-datepicker-buttonpane {
+	clear:right;
+}
+
+.devlyElement .ui-datepicker-rtl .ui-datepicker-buttonpane button {
+	float:left;
+}
+
+.devlyElement .ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float:right;
+}
+
+.devlyElement .ui-datepicker-rtl .ui-datepicker-group {
+	float:right;
+}
+
+.devlyElement .ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header {
+	border-right-width:0;
+	border-left-width:1px;
+}
+
+.devlyElement .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+	border-right-width:0;
+	border-left-width:1px;
+}
+
+.devlyElement .ui-datepicker-cover {
+	display:none;
+/*sorry for IE5*/
+	display//:block;
+/*sorry for IE5*/
+	position:absolute;
+/*must have*/
+	z-index:-1;
+/*must have*/
+	filter:mask();
+/*must have*/
+	top:-4px;
+/*must have*/
+	left:-4px;
+/*must have*/
+	width:200px;
+/*must have*/
+	height:200px;
+/*must have*/
+}

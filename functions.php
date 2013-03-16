@@ -19,7 +19,8 @@
 // ====== GET THE DEVLY CORE UP AND RUNNING (DO NOT REMOVE)
 // =========================================================================
 
-// HOOK UP THE DEVLY CORE: TOOLS + FUNCTIONALTIY
+
+// LOAD UP THE DEVLY CORE
 require_once('assets/core/core.php');
 
 // LOAD THE CUSTOM ADMIN FUNCTIONALITY
@@ -31,12 +32,8 @@ require_once('assets/core/settings.php');
 // LOAD UP THE DEVLY THEME HELPERS
 require_once('assets/core/helpers.php');
 
-//require_once('assets/admin/devly.php');
-//require_once('assets/admin/admin.php');
-//require_once('assets/admin/settings.php');
-
-// require_once('assets/admin/types.php');
-// require_once('metaboxes.php');
+// LOAD & BUILD OUR SAMPLE METABOXES
+require_once('meta-example.php');
 
 
 // =========================================================================
@@ -66,7 +63,9 @@ function devlySearch($form) {
 }
 
 
-
+// =========================================================================
+// ====== ALL YOUR CUSTOM FUNCTIONS SHOULD START HERE
+// =========================================================================
 
 
 

@@ -6,7 +6,7 @@ Description: 	Devly is a modern theme, built to give developers a solid starting
 
 Author:      	Josh McDonald
 Author URI		http://onestepcreative.com
-Version:     	2.5
+Version:     	2.5.1
 
 Twitter:		@onestepcreative
 Github:			https://github.com/onestepcreative
@@ -14,15 +14,13 @@ Github:			https://github.com/onestepcreative
 ***********************************************************************/
 /**********************************************************************
 
-	You're probably looking for some styles to get 
-	started with your new copy of Devly. Let me give
-	you the run down of where to find things, and
-	what this theme can do.
+	You're probably looking for some styles to get started 
+	with your new copy of Devly. Let me give you the run down 
+	of where to find things, and what this theme can do.
 	
-	Devly was built with developers in mind. It aims
-	to make life easier by taking care tedious tasks,
-	and simplifying the work flow. It aims to help
-	you re-use code whenever possible!
+	Devly was built with developers in mind. It aims to make 
+	life easier by taking care of tedious tasks, and simplifying the 
+	work flow. It aims to help you re-use code whenever possible!
 	
 	
 	The file sctructure:
@@ -58,6 +56,15 @@ Github:			https://github.com/onestepcreative
 				them, or delete em!
 				
 				The comments are a bit more detailed here!
+				
+		- meta.php
+		
+			-	This file builds a custom metabox helper
+				to the Devly theme. This allows you to easily
+				create custom metaboxes in the wordpress admin.
+				In devly/meta-example.php, a couple of arrays
+				are constructed to build out examples of 
+				each metabox the helper supports
 		
 		- settings.php
 		

@@ -1,6 +1,22 @@
-<?php get_header(); ?>
+<?php 
+
+/* 
+
+	YOUR DEFAULT PAGE TEMPLATE
+
+	This is your default page template that
+	will be used unless otherwise specified when
+	creating a new page in wordpress.
+
+*/
+
+
+get_header(); 
+
+?>
 
 <div id="contentContainer" class="wrap clearfix">
+	
 	<div id="mainContent" class="eightcol clearfix">
 
 		<?php 
@@ -18,12 +34,9 @@
 					<h5 class="postMeta"><?php the_time('j M, Y'); ?>&nbsp;&nbsp;//&nbsp;&nbsp;Posted Under <?php the_category(', '); ?></h5>
 				</hgroup>
 	
-				<div class="postExcerpt"><?php devlyTruncateExcerpt(250); // FOUND IN HELPER FILE (assets/core/helper.php) ?></div>
+				<div class="postContent"><?php the_content(); ?></div>
 				
-				<a href="<?php echo $permalink; ?>" class="readMore">Read More &rarr;</a>
-				
-				<!-- // UNCOMMENT TO SHOW TAGS IN POST LISTS // -->
-				<div class="postFooter"><p class="tags"><?php //the_tags('<span class="tagsTitle">Tags:</span> ', ', ', ''); ?></p></div>
+				<div class="postFooter"><p class="tags"><?php the_tags('<span class="tagsTitle">Tags:</span> ', ', ', ''); ?></p></div>
 		
 			</article>
 

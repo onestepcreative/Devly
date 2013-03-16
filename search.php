@@ -1,11 +1,15 @@
 <?php 
 
-/* SEARCH RESULTS PAGE
+/* 
 
-This is just recycling the default
-loop right now. There are plans for
-this to change soon. Until then, I
-would recommend swiftype.com */
+	SEARCH RESULTS TEMPLATE
+
+	This is just recycling the default
+	loop right now. There are plans for
+	this to change soon. Until then, I
+	would recommend swiftype.com 
+
+*/
 
 
 get_header(); 
@@ -13,6 +17,7 @@ get_header();
 ?>
 
 <div id="contentContainer" class="wrap clearfix">
+	
 	<div id="mainContent" class="eightcol clearfix">
 
 		<h1 class="archiveTitle"><span>Search Results for:</span> <?php echo esc_attr(get_search_query()); ?></h1>
@@ -36,8 +41,7 @@ get_header();
 				
 				<a href="<?php echo $permalink; ?>" class="readMore">Read More &rarr;</a>
 				
-				<!-- // UNCOMMENT TO SHOW TAGS IN POST LISTS // -->
-				<!-- <div class="postFooter"><p class="tags"><?php //the_tags('<span class="tagsTitle">Tags:</span> ', ', ', ''); ?></p></div> -->
+				<div class="postFooter"><p class="tags"><?php the_tags('<span class="tagsTitle">Tags:</span> ', ', ', ''); ?></p></div>
 		
 			</article>
 

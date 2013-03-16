@@ -1,13 +1,17 @@
 <?php 
 
-/* WELCOME TO THE INDEX.PHP FILE
+/* 
 
-This is the main loop wordpress, by default,
-uses for the home page. Of course that can be
-changed a nummber of different ways, but I
-do recommend leavingthis loop as your 
-backup - you can always copy this file
-and edit it as your wish. */
+	WELCOME TO THE INDEX.PHP FILE
+
+	This is the main loop wordpress, by default,
+	uses for the home page. Of course that can be
+	changed a nummber of different ways, but I
+	do recommend leavingthis loop as your 
+	backup - you can always copy this file
+	and edit it as your wish. 
+
+*/
 
 
 get_header(); 
@@ -15,6 +19,7 @@ get_header();
 ?>
 
 <div id="contentContainer" class="wrap clearfix">
+
 	<div id="mainContent" class="eightcol clearfix">
 
 		<?php 

@@ -1,5 +1,16 @@
 <?php
 
+/* 
+
+	COMMENTS TEMPATE
+	---
+	This template handles comments for around 
+	the site. A callback is used called "devlyComments" 
+	that returns a custom comments layout. Find this
+	callback function in /assets/core/core.php
+
+*/
+
 // TEMPLATE TO DISPLAY COMMENTS FORM
 if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
 die ('Please do not load this page directly. Thanks!');
@@ -68,7 +79,7 @@ die ('Please do not load this page directly. Thanks!');
 
 			<form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
 
-				<?php if ( is_user_logged_in() ) : ?>
+				<?php if (is_user_logged_in()) : ?>
 
 					<p class="comments-logged-in-as">
 						Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. 

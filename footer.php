@@ -11,7 +11,6 @@
 
 	</footer>
 
-
 </div><!-- // DON'T REMOVE END DIV // -->
 
 <?php wp_footer(); ?>

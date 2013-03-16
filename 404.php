@@ -1,10 +1,14 @@
 <?php 
 
-/* 404 PAGE TEMPLATE 
-I haven't had time to come
-up with something clever for
-the 404 page, so you'll have
-to build on your own. */
+/* 
+
+	404 PAGE TEMPLATE 
+	---
+	I haven't had time to come up with 
+	something clever for the 404 page, so 
+	you'll have to build on your own. 
+
+*/
 
 
 get_header(); 

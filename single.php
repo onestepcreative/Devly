@@ -2,18 +2,24 @@
 
 get_header(); 
 
-/* COUNT POST VIEWS AND STORE THEM
+/* 
 
-This function can be found in the devly core 
-file (assets/core/core.php). To learn how to use 
-this data to display most popular posts, visit 
-assets/core/helpers.php. */
+	SINGLE POST TEMPLATE
+	
+	This is your single post template that
+	will be used for all single post pages unless
+	otherwise specified 
 
+*/
+
+
+// COUNT POST VIEWS AND STORE THEM (assets/core/core.php)
 devlyCountPostViews(get_the_ID());
 
 ?>
 
 <div id="contentContainer" class="wrap clearfix">
+	
 	<div id="mainContent" class="eightcol clearfix">
 
 		<?php 
