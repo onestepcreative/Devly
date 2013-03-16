@@ -6,12 +6,12 @@
 		<nav id="footerNav"><?php devlyFooterMenu(); ?></nav>
 
 		<p class="attribution">
-			<?php devlyQueries(); ?>
+			<?php devlyQueries(); // FOUND IN THE DEVLY HELPER FILE (assets/core/helpers.php) ?>
 		</p>
 
 	</footer>
 
-</div><!-- // DON'T REMOVE END DIV // -->
+</div>
 
 <?php wp_footer(); ?>
 

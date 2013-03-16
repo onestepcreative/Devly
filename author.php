@@ -54,14 +54,18 @@ $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('a
 				 // PART OF DEVLY'S CORE (assets/core/core.php)
 				devlyPageNavigation();
 	
-			} else { ?>
+			} else { 
+				
+			?>
 
 				<nav class="defaultPageNav">
 					<ul class="clearfix">
 						<li class="nextSingle"><?php next_posts_link(__('&laquo; Older Entries', 'devlytheme')) ?></li>
 						<li class="prevSingle"><?php previous_posts_link(__('Newer Entries &raquo;', 'devlytheme')) ?></li>
 					</ul>
-				</nav> <?php 
+				</nav> 
+				
+			<?php 
 			
 			}
 			
@@ -70,7 +74,9 @@ $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('a
 			// FOUND IN HELPER FILE (assets/core/helper.php)
 			devlyContentNotFound(); 
 
-		endif; // END MAIN LOOP ?>
+		endif; 
+		
+		?>
 				
 		</div>
 		

@@ -40,9 +40,6 @@ get_header();
 				<div class="postExcerpt"><?php devlyTruncateExcerpt(250); // FOUND IN HELPER FILE (assets/core/helper.php) ?></div>
 				
 				<a href="<?php echo $permalink; ?>" class="readMore">Read More &rarr;</a>
-				
-				<!-- // UNCOMMENT TO SHOW TAGS IN POST LISTS // -->
-				<!-- <div class="postFooter"><p class="tags"><?php //the_tags('<span class="tagsTitle">Tags:</span> ', ', ', ''); ?></p></div> -->
 		
 			</article>
 
@@ -55,14 +52,18 @@ get_header();
 				 // PART OF DEVLY'S CORE (assets/core/core.php)
 				devlyPageNavigation();
 	
-			} else { ?>
+			} else { 
+				
+			?>
 
 				<nav class="defaultPageNav">
 					<ul class="clearfix">
 						<li class="nextSingle"><?php next_posts_link(__('&laquo; Older Entries', 'devlytheme')) ?></li>
 						<li class="prevSingle"><?php previous_posts_link(__('Newer Entries &raquo;', 'devlytheme')) ?></li>
 					</ul>
-				</nav> <?php 
+				</nav> 
+				
+			<?php 
 			
 			}
 			
@@ -71,7 +72,9 @@ get_header();
 			// FOUND IN HELPER FILE (assets/core/helper.php)
 			devlyContentNotFound(); 
 
-		endif; // END MAIN LOOP ?>
+		endif; 
+		
+		?>
 				
 		</div>
 		

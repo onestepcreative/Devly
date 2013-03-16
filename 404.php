@@ -16,6 +16,7 @@ get_header();
 ?>
 
 <div id="contentContainer" class="wrap clearfix">
+	
 	<div id="mainContent" class="eightcol clearfix">
 
 		<hgroup class="contentNotFound">

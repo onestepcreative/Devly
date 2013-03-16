@@ -47,7 +47,9 @@ get_header();
 			// FOUND IN HELPER FILE (assets/core/helper.php)
 			devlyContentNotFound(); 
 
-		endif; // END MAIN LOOP ?>
+		endif; 
+		
+		?>
 				
 		</div>
 		

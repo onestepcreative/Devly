@@ -54,14 +54,18 @@ get_header();
 				 // PART OF DEVLY'S CORE (assets/core/core.php)
 				devlyPageNavigation();
 	
-			} else { ?>
+			} else { 
+				
+			?>
 
 				<nav class="defaultPageNav">
 					<ul class="clearfix">
 						<li class="nextSingle"><?php next_posts_link(__('&laquo; Older Entries', 'devlytheme')) ?></li>
 						<li class="prevSingle"><?php previous_posts_link(__('Newer Entries &raquo;', 'devlytheme')) ?></li>
 					</ul>
-				</nav> <?php 
+				</nav> 
+				
+			<?php 
 			
 			}
 			

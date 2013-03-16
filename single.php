@@ -1,6 +1,4 @@
-<?php 
-
-get_header(); 
+<?php  
 
 /* 
 
@@ -13,8 +11,10 @@ get_header();
 */
 
 
+get_header();
+
 // COUNT POST VIEWS AND STORE THEM (assets/core/core.php)
-devlyCountPostViews(get_the_ID());
+devlyCountPostViews($post->ID);
 
 ?>
 
@@ -39,8 +39,6 @@ devlyCountPostViews(get_the_ID());
 	
 				<div class="postContent"><?php the_content(); ?></div>
 				
-				<a href="<?php echo $permalink; ?>" class="readMore">Read More &rarr;</a>
-				
 				<div class="postFooter"><p class="tags"><?php the_tags('<span class="tagsTitle">Tags:</span> ', ', ', ''); ?></p></div>
 		
 			</article>
@@ -54,14 +52,18 @@ devlyCountPostViews(get_the_ID());
 				 // PART OF DEVLY'S CORE (assets/core/core.php)
 				devlyPageNavigation();
 	
-			} else { ?>
+			} else { 
+				
+			?>
 
 				<nav class="defaultPageNav">
 					<ul class="clearfix">
 						<li class="nextSingle"><?php next_posts_link(__('&laquo; Older Entries', 'devlytheme')) ?></li>
 						<li class="prevSingle"><?php previous_posts_link(__('Newer Entries &raquo;', 'devlytheme')) ?></li>
 					</ul>
-				</nav> <?php 
+				</nav> 
+				
+			<?php 
 			
 			}
 			
@@ -70,7 +72,9 @@ devlyCountPostViews(get_the_ID());
 			// FOUND IN HELPER FILE (assets/core/helper.php)
 			devlyContentNotFound(); 
 
-		endif; // END MAIN LOOP ?>
+		endif; 
+		
+		?>
 				
 		</div>
 		
