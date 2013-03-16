@@ -332,7 +332,10 @@ h3.devlyFeatureTitle {
 }
 
 .devlyOptionContainer .devlyFeature input[type="text"],.devlyOptionContainer .text {
-	width:300px;
+	display: block;
+	height: 30px;
+	padding: 0 5px;
+	width:290px;
 }
 
 .devlyOptionContainer textarea {
@@ -365,10 +368,15 @@ h3.devlyFeatureTitle {
 }
 
 .devlyButtonContainer {
+	border-bottom: 1px solid #CCC;
 	display:block;
 	height:30px;
 	padding:15px 0;
 	width:920px;
+}
+
+.devlyButtonContainer:last-child {
+	border-bottom: none;
 }
 
 h4.devlySavedSuccess {

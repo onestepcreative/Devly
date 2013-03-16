@@ -8,7 +8,7 @@
 
 
 $meta_boxes = array();
-$meta_boxes = apply_filters ( 'devly_meta_boxes' , $meta_boxes );
+$meta_boxes = apply_filters ('devly_meta_boxes' , $meta_boxes);
 
 foreach ($meta_boxes as $meta_box) {
 

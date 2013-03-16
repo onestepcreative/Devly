@@ -31,6 +31,9 @@ function devlyCoreBlastOff() {
 	// CLEANUP THE WORDPRESS HEAD
 	add_action('init', 'devlyCleanHead');
 	
+	// HOOK UP OUR NEW METABOX HELPER CLASS
+	add_action('init', 'devlyMetaboxSetup', 9999);
+	
 	// REMOVE WP VERSION FROM RSS
 	add_filter('the_generator', 'devlyVersionRSS');
 	
@@ -50,9 +53,6 @@ function devlyCoreBlastOff() {
 	
 	// LOAD THIS STUFF AFTER THEME SETUP
 	add_action('after_setup_theme', 'devlyThemeSupport');
-	
-	// HOOK UP OUR NEW METABOX HELPER CLASS
-	add_action('init', 'devlyMetaboxSetup', 9999);
 	
 	// ADDING A COUPLE OF SIDEBARS TO WORDPRESS
 	add_action('widgets_init', 'devlyRegisterSidebars');
@@ -224,7 +224,7 @@ function devlyMetaboxSetup() {
 
 	if (!class_exists('Devly_Meta_Box')) {
 	
-		require_once 'assets/core/meta.php';
+		require_once 'meta.php';
 
 	}
 

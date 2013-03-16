@@ -232,18 +232,9 @@ function devlyBuildSettingsPage() {
 					case 'general' : ?>
 				
 					<h3 class="devlyTypeTitle">General Settings</h3>
-					
-					<!--
-<div class="devlyOptionInstructions">
-						Feel free to store your theme options here, in the Theme Settings Panel. The Devly Theme is equipped to
-						handle this in a very intuitive way with the use of the Wordpress Settings API. Located in <b>assets/core/helpers.php</b>
-						you'll notice a global variable has been set called <b>$devlyOptions</b>. This variable holds an array of all
-						values for the "devlyThemeOptions".<br>
-						<br>
-						To use a value from the settings panel, simply use syntax like this: <b>$devlyOptions['your_option']</b>
-					</div>
--->
-							
+						
+						<?php devlyThemeSubmitButton(); ?>
+									
 						<!-- COLOR SCHEME -->
 						<div class="devlyOptionContainer">  
 							<h3 class="devlyFeatureTitle">Color Scheme</h3>
