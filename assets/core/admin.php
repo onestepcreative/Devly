@@ -6,6 +6,7 @@
 	Twitter:  @onestepcreative
 	Website:  http://onestepcreative.com
 
+	Theme Version:			3.0.1
 
 	This file handles most of the custom admin
 	functionality and cleanup. With this file we'll

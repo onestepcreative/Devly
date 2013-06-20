@@ -15,9 +15,9 @@ get_header();
 
 ?>
 
-<div id="contentContainer" class="wrap clearfix">
-	
-	<div id="mainContent" class="eightcol clearfix">
+<div id="content-container" class="row">
+
+	<div id="main-content" class="small-12 medium-8 large-8 column">
 
 		<?php 
 		
@@ -25,18 +25,21 @@ get_header();
 			
 			$permalink = get_permalink(); ?>
 
-			<article class="articleContainer clearfix" id="post-<?php the_ID(); ?>" data-id="<?php the_ID(); ?>" role="article">
+			<article id="post-<?php the_ID(); ?>" class="article-container single" data-id="<?php the_ID(); ?>" role="article">
 	
-				<hgroup class="postHeading">
-					<h2 class="postTitle">
-						<a href="<?php echo $permalink; ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-					</h2>
-					<h5 class="postMeta"><?php the_time('j M, Y'); ?>&nbsp;&nbsp;//&nbsp;&nbsp;Posted Under <?php the_category(', '); ?></h5>
+				<hgroup class="post-heading">
+					
+					<h2 class="post-title"><a href="<?php echo $permalink; ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+					
+					<!-- // UNCOMMENT TO SHOW AUTHOR & CATEGORY // -->
+					<!-- <h5 class="post-meta"><?php //the_time('j M, Y'); ?>&nbsp;&nbsp;//&nbsp;&nbsp;Posted Under <?php //the_category(', '); ?></h5> -->
+				
 				</hgroup>
 	
-				<div class="postContent"><?php the_content(); ?></div>
+				<div class="post-content"><?php the_content(); ?></div>
 				
-				<div class="postFooter"><p class="tags"><?php the_tags('<span class="tagsTitle">Tags:</span> ', ', ', ''); ?></p></div>
+				<!-- // UNCOMMENT TO SHOW TAGS IN POST LISTS // -->
+				<!-- <div class="post-footer"><p class="tags"><?php the_tags('<span class="tags-title">Tags:</span> ', ', ', ''); ?></p></div> -->
 		
 			</article>
 
@@ -47,9 +50,7 @@ get_header();
 			// FOUND IN HELPER FILE (assets/core/helper.php)
 			devlyContentNotFound(); 
 
-		endif; 
-		
-		?>
+		endif; // END MAIN LOOP ?>
 				
 		</div>
 		

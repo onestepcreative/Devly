@@ -5,7 +5,8 @@
 	Author:   Josh McDonald
 	Twitter:  @onestepcreative
 	Website:  http://onestepcreative.com
-	Version:  2.5.0
+	
+	Version:  3.0.1
 
 	This file is the core of Devly, and contains 
 	most of the functions and additional features.
@@ -452,13 +453,13 @@ function devlyPageNavigation($before = '', $after = '') {
 	// SETUP STARTING POINT
 	if($startPage <= 0) { $startPage = 1; }
 
-	echo $before . '<nav class="pageNavigation"><ol class="devlyPageNav clearfix">' . "";
+	echo $before . '<nav class="page-navigation"><ol class="devlyPageNav clearfix">' . "";
 
 	// SETUP BACK TO FIRST PAGE LINK
 	if ($startPage >= 2 && $pageLinksLimit < $maxPages) {
 
 		$firstPageText = "First";
-		echo '<li class="devlyFirstLink"><a href="' . get_pagenum_link() . '" title="' . $firstPageText . '">' . $firstPageText . '</a></li>';
+		echo '<li class="devly-first-link"><a href="' . get_pagenum_link() . '" title="' . $firstPageText . '">' . $firstPageText . '</a></li>';
 
 	}
 
@@ -468,7 +469,7 @@ function devlyPageNavigation($before = '', $after = '') {
 	// SETUP NUMBERED LINKS
 	for($i = $startPage; $i <= $endPage; $i++) {
 
-		if($i == $paged) { echo '<li class="currentPage">' . $i . '</li>'; } else { echo '<li><a href="' . get_pagenum_link($i) . '">' . $i . '</a></li>'; }
+		if($i == $paged) { echo '<li class="current-page">' . $i . '</li>'; } else { echo '<li><a href="' . get_pagenum_link($i) . '">' . $i . '</a></li>'; }
 
 	}
 
@@ -479,7 +480,7 @@ function devlyPageNavigation($before = '', $after = '') {
 	if ($endPage < $maxPages) {
 
 		$lastPageText = "Last";
-		echo '<li class="devlyLastLink"><a href="' . get_pagenum_link($maxPages) . '" title="' . $lastPageText . '">' . $lastPageText . '</a></li>';
+		echo '<li class="devly-last-link"><a href="' . get_pagenum_link($maxPages) . '" title="' . $lastPageText . '">' . $lastPageText . '</a></li>';
 
 	}
 

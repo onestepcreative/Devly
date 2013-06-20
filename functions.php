@@ -55,10 +55,14 @@ set_post_thumbnail_size( 125, 125, true );
 
 
 function devlySearch($form) {
-    $form = '<form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
-    <input type="text" value="' . get_search_query() . '" name="search" id="search" class="text" placeholder="Search the Site..." />
-    <button type="submit" id="search-submit">Search</button>
-    </form>';
+    $form = 
+    	'<div class="row">
+	    	<form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
+	    		<span class="small-8 column"><input type="text" name="search" class="text search-input" placeholder="Search the Site..." /></span>
+				<span class="small-4 column"><button type="submit" id="search-submit" class="small-12 radius">Search</button></span>
+			</form>
+		</div>';
+    
     return $form;
 }
 

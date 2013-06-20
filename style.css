@@ -6,7 +6,7 @@ Description: 	Devly is a modern theme, built to give developers a solid starting
 
 Author:      	Josh McDonald
 Author URI		http://onestepcreative.com
-Version:     	2.5.1
+Version:     	3.0.1
 
 Twitter:		@onestepcreative
 Github:			https://github.com/onestepcreative
@@ -74,13 +74,16 @@ Github:			https://github.com/onestepcreative
 				it as a starting point, so the information
 				you enter in the settings page won't be
 				reflected on the site.		
+				
+		- styles/admin.css 		- WP Admin styles
+		- styles/meta.css 		- Metabox helper styles
+		- styles/login.css 		- Login page styles
 	
 	
 	The rest of the files are in /assets/
 	
 	-	assets/css/
 		
-		-	admin.css 		- Admin styles
 		-	devly.css 		- Normalize CSS Reset
 		-	global.css		- Your theme styles are here
 		-	responsive.css	- Additional theme styles (responsive)	

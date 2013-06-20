@@ -1,25 +1,26 @@
 
 /*
+
 	Author:  JOSH MCDONALD
 	Twitter: @onestepcreative
 	Website: onestepcreative.com
-
-
-	Color Palatte:
-
-	Devly Blue:		#2082AB;
-	Light Blue:		#50A5C8
-
-	Bright Red:		#D01212
-	Medium Gray:	#555555
-	Off Black:		#141414
-	Off White:		#EAEAEA
 	
+	Theme Version:			3.0.1
+	Foundation Version: 	4.2.2 Custom
+
 	This stylesheet contains most of the styles and 
 	defaults for the Devly Theme. Remember that this
 	theme uses a google webfont call 'Volkhov'. The
 	typeface is being loaded in from google in the
 	header.php file.
+	
+	
+	--
+
+	Color Palatte:
+
+	Bright Blue:	#08C
+	Light Blue:		#BFDAE8
 
 */
 
@@ -32,7 +33,7 @@ html { height: 100%; }
 body {
 	background: #FFF url(/wp-content/themes/devly/assets/img/ui/page-bg.png);
 	color: #666;
-	font: 14px/20px Helvetica, Sans-Serif;
+	font: 14px/20px "Helvetica Neue", "Helvetica", Helvetica, Arial, Sans-Serif;
 	text-rendering: geometricPrecision;
 	-ms-text-size-adjust: 100%;
 	-webkit-font-smoothing: antialiased;
@@ -62,7 +63,7 @@ a:active {
 }
 
 a:hover  {
-	color: #2082AB;
+	color: #08C;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -98,65 +99,53 @@ dd { margin: 0; }
 /* =======================================================================*/	
 
 
-#pageContainer {
+#page-container {
 	margin: 0;
-	padding: 100px 0 0 0;
-}
-
-.wrap {
-	width: 90%;
-	margin: 0 auto;
+	min-width: 320px;
+	padding: 0;
 }
 
 
 /* =========================================================================
-/* ====== DEVLY'S FIXED HEADER ELEMENTS & STYLES  
+/* ====== DEVLY'S TOPBAR HEADER ELEMENTS & STYLES  
 /* =======================================================================*/
 
-
-#headerContainer {
-	background: #F3F3F3;
-	border-top: 5px solid #2082AB;
+.header-container {
+	background: #FFF;
+	border-top: 3px solid #08C;
+	
 	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
-	display: block;
-	height: 70px;
-	padding: 0;
-	position: fixed; top: 0; left: 0; right: 0;
-	width: 100%;
-	z-index: 100;
+	-o-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+	
+	margin-bottom: 40px;
+	min-height: 60px;
 }
 
-#header {
-	display: block;
-	height: 70px;
+.logo-wrap {
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
-#header #logoContainer {
-	display: block;
-	float: left;
-	height: 30px;
-	margin: 0;
-	padding: 20px 0;
-}
-
-#header #logo {
+.logo-wrap .logo {
 	display: block;
 	float: left;
 	margin: 0;
 	padding: 0;
 }
 
-#header #logo a {
+.logo-wrap .logo a {
 	color: #555;
 	font: 600px 20px/30px;
 	text-shadow: 0 1px 0 #FFF;
 }
 
-#header #logo a:hover {
-	color: #2082AB;
+.logo-wrap .logo a:hover {
+	color: #08C;
 }
 
-#header .slogan {
+.header-container .slogan {
 	color: #CCC;
 	display: block;
 	float: left;
@@ -164,10 +153,9 @@ dd { margin: 0; }
 	margin: 0 0 0 10px;
 }
 
-#mainNav {
-	display: block;
-	height: 30px;
-	padding: 20px 0;
+.main-nav {
+	padding-bottom: 20px;
+	padding-top: 20px;
 	text-align: right;
 }
 
@@ -181,123 +169,192 @@ dd { margin: 0; }
 }
 
 .menu a:hover {
-	color: #2082AB;
+	color: #08C;
 }
 
 
 /* =========================================================================
-/* ====== MAIN PAGE CONTENT & LOOP ELEMENTS & STYLES  
+/* ====== MAIN CONTENT POST SUMMARY (LIST VIEW) ELEMENTS & STYLES  
 /* =======================================================================*/
 
-
-#contentContainer {
-	margin: 20px auto;
-}
-	
-#mainContent {
-	display: block;
-	margin: 0;
-	padding: 0;
-}
-
-.articleContainer {
-	border-bottom: 1px dotted #CCC;
+.article-container {
 	margin: 0 0 60px 0;
-	padding: 0 0 20px 0;
-	}
-	
-.postHeading {
+}
+
+.article-container p {
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	line-height: 20px;
+}
+
+.post-heading {
 	display: block;
-	margin: 0 0 15px 0;
+	margin: 0;
 	padding: 0;
 }
 
-a.readMore, a.readMore:visited {
-	background: #2082AB;
-	border: 1px solid #2193AB;
-	border-radius: 3px;
-	color: #FFF;
-	display: inline-block;
-	font-weight: 600;
-	height: 28px;
-	line-height: 28px;
-	margin: 20px 0 0 0;
-	padding: 0 10px;
-	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5);
+.post-title, .page-title {
+	color: #666;
+	font: normal 600 28px/36px;
+	margin: 5px 0;
+	padding: 0;
 }
 
-.readMore:active {
-	-webkit-transform: translateY(1px);
-}
-
-.postTitle {
-	color: #555;
-	display: block;
-	font: normal 600 28px/36px Helvetica, Sans-Serif;
-	margin: 0;
-	padding: 15px 0 5px 0;
-	}
-
-.postMeta {
+.post-meta {
 	color: #BBB;
 	font-size: 13px;
 	margin: 0;
 	padding: 0;
-	}
+}
 	
-.postMeta a {
-	color: #50A5C8;
+.post-meta a { color: #08C; }
+.post-meta a:hover { color: #555; }
+
+.post-excerpt {
+	padding: 30px 0;
 }
 
-.postMeta a:hover {
-	color: #555;
+a.read-more, a.read-more:visited {
+	background: #08C;
+	border: 1px solid #2193AB;
+	
+	border-radius: 3px;
+	-o-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	
+	color: #FFF;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+	margin: 0;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
 }
 
-.postContent { 
+
+/* =========================================================================
+/* ====== MAIN CONTENT SINGLE POST (FULL VIEW) ELEMENTS & STYLES  
+/* =======================================================================*/
+
+.article-container.single {
+	border: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.post-content { 
 	display: block;
 	margin: 0;
-	padding: 0 0 10px 0;
+	padding: 20px 0;
 }
 
-.postContent dd {
+.post-content a {
+	color: #08C;
+	font-weight: bold;
+}
+
+.post-content a:hover {
+	color: #777;
+}
+
+.archive-title {
+	background: lightYellow;
+	border: 1px solid #EBE7D2;
+	
+	border-radius: 3px;
+	-o-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	
+	color: #C09853;
+	font-size: 12px;
+	font-weight: normal;
+	height: 38px;
+	line-height: 38px;
+	margin: 0 0 30px 0;
+	padding: 0 10px;
+}
+
+.archive-title span {
+	font-weight: bold;
+}
+
+.post-content img {
+	margin: 0 0 20px 0;
+	max-width: 100%;
+}
+
+.post-content img.alignleft {
+	margin: 0 15px 10px 0;
+	max-width: 100%;
+}
+
+.post-content img.alignright {
+	margin: 0 0 10px 15px;
+	max-width: 100%;
+}
+
+.tags-title {
+	font-weight: bold;
+}
+
+.tags a {
+	color: #08C;
+	font-weight: bold;
+	padding: 0 5px;
+}
+
+.tags a:hover {
+	color: #999;
+}
+
+.post-content blockquote {
+	color: #999;
+	font: italic 18px/24px Volkhov, sans-serif;
+	padding: 15px 25px;
+}
+
+.post-content dd {
 	margin-left: 0;
 	font-size: 0.9em;
 	color: #787878;
 	margin-bottom: 1.5em;
-	}
+}
 
-.postContent img {
-	margin: 0 0 1.5em 0;
+.post-content video,
+.post-content object {
 	max-width: 100%;
-	}
+}
 
-.postContent video,
-.postContent object {
-	max-width: 100%;
-	}
-
-.postContent pre,
-.postContent code {
+.post-content pre,
+.post-content code {
 	background: #eee;
 	border: 1px solid #cecece;
 	padding: 10px;
-	}
+}
+
+.post-content ul, .post-content ol {
+	clear: both;
+	padding: 5px 30px;
+}
 
 .wp-caption {
 	background: #eee;
 	padding: 5px;
-	}
+}
 
 .wp-caption img {
 	margin-bottom: 0;
 	width: 100%;
-	}
+}
 
 .wp-caption p.wp-caption-text {
 	font-size: 0.85em;
 	margin: 4px 0 7px;
 	text-align: center;
-	}
+}
 
 	
 /* ======================================================= */
@@ -305,12 +362,12 @@ a.readMore, a.readMore:visited {
 /* ======================================================= */
 
 
-.pageNavigation {
+.page-navigation {
 	display: block;
 	height: 30px;
 }
 
-.pageNavigation a {
+.page-navigation a {
 	background: #EEE;
 	border: 1px solid #DDD;
 	border-radius: 2px;
@@ -324,8 +381,8 @@ a.readMore, a.readMore:visited {
 	text-shadow: 0 1px 0 #FFF;
 }
 
-.pageNavigation .currentPage  {
-	background: #2082AB;
+.page-navigation .current-page  {
+	background: #08C;
 	border: 1px solid #10719A;
 	border-radius: 2px;
 	color: #FFF;
@@ -339,8 +396,8 @@ a.readMore, a.readMore:visited {
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
 }
 
-.pageNavigation .nextPageLink a,
-.pageNavigation .prevPageLink a {
+.page-navigation .devly-first-link a,
+.page-navigation .devly-last-link a {
 	line-height: 27px;
 }
 
@@ -348,18 +405,18 @@ a.readMore, a.readMore:visited {
 /* ===== GLOBAL TYPOGRAPHY ELEMENTS & STYLES ===== */
 /* ================================================ */
 
-h2.postHeading, h2.pageHeading {
+h2.post-heading, h2.pageHeading {
 	line-height: 36px;
 	margin: 0 0 5px 0;
 	padding: 0;
 	}
 
-h2.postHeading a, h2.pageHeading a {
+h2.post-heading a, h2.pageHeading a {
 	color: #333;
 }
 
-h2.postHeading a:hover, h2.pageHeading a:hover {
-	color: #2082AB;
+h2.post-heading a:hover, h2.pageHeading a:hover {
+	color: #08C;
 }
 
 h3.comment-name {
@@ -394,7 +451,45 @@ h3.authorName {
 /* ===== SIDEBAR (ASIDE) ELEMENTS & STYLES ===== */
 /* ============================================= */
 
-.widget ul li { }
+.widget { margin-bottom: 30px; }
+
+.widgettitle {
+	background: #444;
+	color: #FEFEFE;
+	line-height: 48px;
+	margin: -1px -2px 0 -2px;
+	padding: 0 15px;
+}
+
+.widget ul {
+	border: 1px solid #E5E5E5;
+	border-bottom-color: #FBFBFB;
+	border-top-color: #444;
+}
+
+.widget ul li {
+	border-bottom: 1px solid #E5E5E5;
+	border-top: 1px solid #FBFBFB;
+	padding: 12px 15px;
+}
+
+.widget ul li:hover {
+	background: #EEE;
+}
+
+.widget ul li a { 
+	color: #08c; 
+	display: block;
+	font-weight: bold;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+	white-space: nowrap;
+}
+
+#search-2 { height: 40px; }
+
+.search-input { height: 38px!important; border-radius: 3px!important; }
 
 /* =============================================== */
 /* ===== AUTHOR BIO LAYOUT ELEMENTS & STYLES ===== */
@@ -502,7 +597,7 @@ h3.authorName {
 	display: block;
 	float: left;
 	border-radius: 10px;
-	color: #2082AB;
+	color: #08C;
 	font-size: 11px;
 	height: 10px;
 	line-height: 16px;
@@ -753,8 +848,18 @@ h3.authorName {
 /* ===== SITE FOOTER ELEMENTS & STYLES ===== */
 /* ========================================= */
 
-.footerContainer {
+.footer-container {
+	background: #FFF;
+	border-top: 1px solid #DDD;
+	
+	box-shadow: 0 -1px 0 #FFF;
+	-o-box-shadow: 0 -1px 0 #FFF;
+	-moz-box-shadow: 0 -1px 0 #FFF;
+	-webkit-box-shadow: 0 -1px 0 #FFF;
+	
 	clear: both;
+	margin-top: 30px;
+	min-height: 140px;
 }
 
 .attribution {

@@ -1,5 +1,5 @@
 
-<aside id="sidebarContainer" class="sidebar fourcol last clearfix">
+<aside class="sidebar small-12 medium-4 large-4 columns">
 
 	<?php 
 	

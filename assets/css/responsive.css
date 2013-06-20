@@ -1,185 +1,329 @@
 
 /*
 
-	Author:   Josh McDonald
-	Twitter:  @onestepcreative
-	Website:  http://onestepcreative.com
+	Author: 				Josh McDonald
+	Twitter:				@onestepcreative
+	Website: 				CrystalCommerce.com
+
+	Theme Version:			3.0.1
+	Foundation Version: 	4.2.2 Custom
+	
+	This file contains any additional responsive 
+	styles you may need to add to allow your website 
+	to flow more smoothly across more device.
 
 */
 
-/* ================================================== */
-/* === BASE STYLES AND PRECISE FOR MOBILE DEVICES === */
-/* ================================================== */
+
+/* ==============================================================================
+/* ====== (MIN WIDTH ONLY - 320px) PRIMARY MOBILE ELEMENTS & STYLES	 
+/* ============================================================================= */
 
 @media only screen and (min-width: 320px) {
 
-.postContent { }
+	/* ====================================================
+	/* ===== START SHOW & HIDE YOUR ELEMENTS HERE
+	/* =================================================== */
 
-.postContent .alignleft, .postContent img.alignleft {
-	margin-right: 1.5em;
-	display: inline;
-	float: left;
+	/* HIDE ALL OF THESE ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: none!important; }
+	
+	/* SHOW BLOCK LEVEL ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: block!important; }
+	
+	/* SHOW INLINE-BLOCK ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: inline-block!important; }
+	
+	/* SHOW INLINE LEVEL ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: inline!important; }
+	
+	/* ====================================================
+	/* ===== END SHOW & HIDE DECLARATIONS HERE 
+	/* ================================================== */
+
+	
+	.article-container {
+		border-bottom: 1px dotted #AAA;
+		padding: 0 0 35px 0;
 	}
 
-.postContent .alignright, .postContent img.alignright {
-	margin-left: 1.5em;
-	display: inline;
-	float: right;
-	}
 
-.postContent .aligncenter, .postContent img.aligncenter {
-	margin-right: auto;
-	margin-left: auto;
-	display: block;
-	clear: both;
-	}
-
-.wp-caption { }
-
-} /* // END MIN 320PX */
-
-
-
-/* =================================================================== */
-/* === PORTRAIT IPADS & LARGER SCREENS / LAPTOPS(SMALLER) & TABLES === */
-/* =================================================================== */
-
-@media only screen and (min-width: 768px) {
-
-/* =================================================== */
-/* === GRID OPTIONS - BASED ON THE 1140 GRID SYTEM === */
-/* =================================================== */
-
-.onecol { width: 4.85%; }	   /* // GRID 0 */
-.twocol { width: 13.45%; }	   /* // GRID 1 */
-.threecol { width: 22.05%; }   /* // GRID 2 */
-.fourcol { width: 30.75%; }	   /* // GRID 3 */
-.fivecol { width: 39.45%; }	   /* // GRID 4 */
-.sixcol { width: 48%; }		   /* // GRID 5 */
-.sevencol { width: 56.75%; }   /* // GRID 6 */
-.eightcol { width: 65.4%; }	   /* // GRID 7 */
-.ninecol { width: 74.05%; }	   /* // GRID 8 */
-.tencol { width: 82.7%; }	   /* // GRID 9 */
-.elevencol { width: 91.35%; }  /* // GRID 10 */
-.twelvecol { width: 100%; }	   /* // GRID 11 */
-
-.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol,
-.sevencol, .eightcol, .ninecol, .tencol, .elevencol {		   /* // GRID 12 */
-	float: left;
-	position: relative;
-	margin-right: 3.8%;
-	}
-
-.twelvecol {
-    float: left;
-    position: relative;
-    }
-
-.last {
-	margin-right: 0;
-	float: right;
-	}
-
-/* ============================================ */
-/* ===== END GRID OPTIONS - DO NOT REMOVE ===== */
-/* ============================================ */
-
-
-.wrap {
-    max-width: 960px;
 }
 
-.menu ul {
-	background: #eee;
-	}
 
-.menu ul li {
-	float: left;
-	position: relative;
-	}
 
-.menu ul li ul.sub-menu,
-.menu ul li ul.children {
-	width: 200px;
-	border: 1px solid #ccc;
-	border-top: 0;
-	position: absolute;
-	display: none;
-	z-index: 8999;
-	}
+/* ==============================================================================
+/* ====== (MIN 320px - 767px MAX) MOBILE SPECIFIC ELEMENTS & STYLES	 
+/* ============================================================================ */
 
-.menu ul li ul.sub-menu li a,
-.menu ul li ul.children li a {
-	padding-left: 10px;
-	border-right: 0;
-	display: block;
-	width: 180px;
-	border-bottom: 1px solid #ccc;
-	}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
 
-.menu ul li ul.sub-menu li:last-child a,
-.menu ul li ul.children li:last-child a {
-	border-bottom: 0;
-	}
+	/* ====================================================
+	/* ===== START SHOW & HIDE YOUR ELEMENTS HERE
+	/* =================================================== */
 
-.menu ul li:hover ul {
-	top: auto;
-	display: block;
-	}
+	/* HIDE ALL OF THESE ELEMENTS (LIST ALL CLASSES & ID's) */
+	.slogan { display: none!important; }
+	
+	/* SHOW BLOCK LEVEL ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: block!important; }
+	
+	/* SHOW INLINE-BLOCK ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: inline-block!important; }
+	
+	/* SHOW INLINE LEVEL ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: inline!important; }
+	
+	/* ====================================================
+	/* ===== END SHOW & HIDE DECLARATIONS HERE 
+	/* ================================================== */
 
-.postContent {
-	color: #555;
+	
+	.main-nav { padding-top: 0; text-align: left; }
+	
+	.main-nav a {
+		background: #FBFBFB;
+		border: 1px solid #BFDAE8;
+		border-radius: 3px;
+		color: #08C;
+		display: block;
+		margin-bottom: 5px;
+		padding: 7px 16px;
 	}
-
-.sidebar {
-	margin-top: 2.2em;
+	
+	.article-container.single {
+		border-bottom: 1px dotted #08C;
+		margin-bottom: 45px;
+		padding-bottom: 25px;
 	}
-
-.widgettitle {
-	border-bottom: 2px solid #444;
-	margin-bottom: 0.75em;
-	}
-
-.widget {
-	padding: 0 10px;
-	margin: 2.2em 0;
-	}
-
-.widget ul li {
-	margin-bottom: 0.75em;
-	}
-
-.widget ul li ul {
-	margin-top: 0.75em;
-	padding-left: 1em;
+	
+	.read-more { 
+		font-size: 14px;
+		padding: 15px; 
+		text-align: center;
+		width: 100%; 
 	}
 
 
-/* ========================================= */
-/* === DESKTOP SCREENS / FULLY ENHANCED  === */
-/* ========================================= */
+}
 
-@media only screen and (min-width: 1030px) {
 
-/*
-.wrap {
-	max-width: 1140px;
+
+/* ==============================================================================
+/* ====== (MIN WIDTH ONLY - 768px) TABLET + SOME DESKTOP ELEMENTS & STYLES	 
+/* ============================================================================ */
+
+@media only screen and (min-width: 768px) {
+	
+	/* ====================================================
+	/* ===== START SHOW & HIDE YOUR ELEMENTS HERE
+	/* =================================================== */
+
+	/* HIDE ALL OF THESE ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: none!important; }
+	
+	/* SHOW BLOCK LEVEL ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: block!important; }
+	
+	/* SHOW INLINE-BLOCK ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: inline-block!important; }
+	
+	/* SHOW INLINE LEVEL ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: inline!important; }
+	
+	/* ====================================================
+	/* ===== END SHOW & HIDE DECLARATIONS HERE 
+	/* ================================================== */
+
+	
+	.article-container {
+		border-bottom: 1px dotted #08C;
+		padding: 0 0 65px 0;
 	}
-*/
+	
+	.read-more { font-size: 12px; padding: 8px 20px; }
+  
 
-} /* // END MIN 1030PX */
-
-
-
-
-/* ============================================================ */
-/* === DESKTOP SCREENS / FULL SIZE LAYOUT & FULLY ENHANCED  === */
-/* ============================================================ */
-
-@media only screen and (min-width: 1240px) {
+}
 
 
 
-} /* // END MIN 1240PX */
+/* ==============================================================================
+/* ====== (MIN 768px - 979px MAX) TABLET SPECIFIC ELEMENTS & STYLES	 
+/* ============================================================================ */
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+	
+	/* ====================================================
+	/* ===== START SHOW & HIDE YOUR ELEMENTS HERE
+	/* =================================================== */
+
+	/* HIDE ALL OF THESE ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: none!important; }
+	
+	/* SHOW BLOCK LEVEL ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: block!important; }
+	
+	/* SHOW INLINE-BLOCK ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: inline-block!important; }
+	
+	/* SHOW INLINE LEVEL ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: inline!important; }
+	
+	/* ====================================================
+	/* ===== END SHOW & HIDE DECLARATIONS HERE 
+	/* ================================================== */
+
+	
+	.element { }
+	
+  
+}
+
+
+
+/* ==============================================================================
+/* ====== (MIN WIDTH ONLY - 980px) PRIMARY DESKTOP ELEMENTS & STYLES	 
+/* ============================================================================ */
+
+@media only screen and (min-width: 980px) {
+
+	/* ====================================================
+	/* ===== START SHOW & HIDE YOUR ELEMENTS HERE
+	/* =================================================== */
+
+	/* HIDE ALL OF THESE ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: none!important; }
+	
+	/* SHOW BLOCK LEVEL ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: block!important; }
+	
+	/* SHOW INLINE-BLOCK ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: inline-block!important; }
+	
+	/* SHOW INLINE LEVEL ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: inline!important; }
+	
+	/* ====================================================
+	/* ===== END SHOW & HIDE DECLARATIONS HERE 
+	/* ================================================== */
+
+	
+	.element { }
+
+
+}
+
+
+
+/* ==============================================================================
+/* ====== (ORIENTATION PORTRAIT ONLY) TOUCH ENABLED ELEMENTS & STYLES	 
+/* ============================================================================ */
+
+@media only screen (orientation: portrait) {
+
+	/* ====================================================
+	/* ===== SHOW & HIDE YOUR ELEMENTS HERE
+	/* ================================================== */
+
+	/* HIDE ALL OF THESE ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: none!important; }
+	
+	/* SHOW BLOCK LEVEL ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: block!important; }
+	
+	/* SHOW INLINE-BLOCK ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: inline-block!important; }
+	
+	/* SHOW INLINE LEVEL ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: inline!important; }
+	
+	/* ====================================================
+	/* ===== END SHOW & HIDE DECLARATIONS HERE
+	/* ================================================== */
+	
+	
+	.element { /* ADDITIONAL STYLES HERE */ }
+	
+	
+}
+
+
+
+/* ==============================================================================
+/* ====== (HIGH RES ONLY 1.5x PIX RATIO) HIGH RESOLUTION ELEMENTS & STYLES	 
+/* ============================================================================ */
+
+@media  (min--moz-device-pixel-ratio: 1.5),(-o-min-device-pixel-ratio: 32),
+		(-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5),
+		(min-resolution: 144dpi),(min-resolution: 1.5dppx) {
+
+	/* ====================================================
+	/* ===== START SHOW & HIDE YOUR ELEMENTS HERE
+	/* =================================================== */
+
+	/* HIDE ALL OF THESE ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: none!important; }
+	
+	/* SHOW BLOCK LEVEL ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: block!important; }
+	
+	/* SHOW INLINE-BLOCK ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: inline-block!important; }
+	
+	/* SHOW INLINE LEVEL ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: inline!important; }
+	
+	/* ====================================================
+	/* ===== END SHOW & HIDE DECLARATIONS HERE 
+	/* ================================================== */
+
+	
+	.element { }
+
+
+}
+
+
+
+/* ==============================================================================
+/* ====== (RETINA ONLY 2x PIX RATIO) RETINA RESOLUTION ELEMENTS & STYLES	 
+/* ============================================================================ */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),only screen and (min-device-pixel-ratio: 2) {
+	
+	/* ====================================================
+	/* ===== START SHOW & HIDE YOUR ELEMENTS HERE
+	/* =================================================== */
+
+	/* HIDE ALL OF THESE ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: none!important; }
+	
+	/* SHOW BLOCK LEVEL ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: block!important; }
+	
+	/* SHOW INLINE-BLOCK ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: inline-block!important; }
+	
+	/* SHOW INLINE LEVEL ELEMENTS (LIST ALL CLASSES & ID's) */
+	.element { display: inline!important; }
+	
+	/* ====================================================
+	/* ===== END SHOW & HIDE DECLARATIONS HERE 
+	/* ================================================== */
+
+	
+	.element { }
+
+	
+}
+
+
+
+
+
+
+
+
 
 

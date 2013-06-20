@@ -35,24 +35,26 @@
 
 <body <?php body_class(); ?>>
 
-<div id="pageContainer">
+<div id="page-container">
 
-	<section id="headerContainer">
-		<div id="header" class="wrap clearfix">
+	<header class="header-container">
+		<div class="row">
 
-			<hgroup id="logoContainer" class="threecol">
+			<hgroup class="logo-wrap small-12 medium-4 large-4 column">
 				
-				<h3 id="logo"><a href="/" rel="nofollow">Devly</a></h3>
+				<h3 class="logo"><a href="/" rel="nofollow">Devly</a></h3>
 				<h5 class="slogan">a theme for developers</h5>
 			
 			</hgroup>
 			
-			<nav id="mainNav" class="menu">
+			<nav class="main-nav menu small-12 medium-8 large-8 column">
+				
 				<?php devlyMainMenu(); // THIS MENU IS REGISTERED IN /assets/core/core.php ?>
+			
 			</nav>
 			
 		</div>
-	</section>
+	</header>
 	
 
 

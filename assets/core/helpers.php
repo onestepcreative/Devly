@@ -6,6 +6,7 @@
 	Twitter:  @onestepcreative
 	Website:  http://onestepcreative.com
 
+	Theme Version:			3.0.1
 
 	This file contains a few extra functions
 	I've written over time that I tend to use in
@@ -348,7 +349,7 @@ function devlyPopularPosts($number) {
 	display the proper title on the archive
 	pages. Nothing special.
 	
-	Usage: devlySimpleAuthor();
+	Usage: devlyArchiveTitles();
 
 */
 
@@ -356,17 +357,17 @@ function devlyPopularPosts($number) {
 function devlyArchiveTitles() {
 	
 	if (is_category()) {
-		echo '<h1 class="archiveTitle"><span>' . _e("Posts Categorized:") . '</span> ' . single_cat_title() . '</h1>';
+		?><h1 class="archive-title"><span>Posts Categorized:</span> <?php single_cat_title() ?></h1> <?php
 	} elseif (is_tag()) {
-		echo '<h1 class="archiveTitle"><span>' . _e("Posts Tagged:") . '</span> ' . single_tag_title() . '</h1>';
+		?><h1 class="archive-title"><span>Posts Tagged:</span> <?php single_tag_title() ?></h1> <?php
 	} elseif (is_author()) {
-		echo '<h1 class="archiveTitle"><span>' . _e("Posts By:") . '</span> ' . get_the_author_meta('display_name') . '</h1>';
+		echo '<h1 class="archive-title"><span>Posts By:</span> ' . get_the_author_meta('display_name') . '</h1>';
 	} elseif (is_day()) {
-		echo '<h1 class="archiveTitle"><span>' . _e("Daily Archives:") . '</span> ' . the_time('l, F j, Y') . '</h1>';
+		echo '<h1 class="archive-title"><span>Daily Archives:</span> ' . get_the_time('l, F j, Y') . '</h1>';
 	} elseif (is_month()) {
-		echo '<h1 class="archiveTitle"><span>' . _e("Monthly Archives:") . '</span> ' . the_time('F Y') . '</h1>';
+		echo '<h1 class="archive-title"><span>Monthly Archives:</span> ' . get_the_time('F Y') . '</h1>';
 	} elseif (is_year()) {
-		echo '<h1 class="archiveTitle"><span>' . _e("Yearly Archives:") . '</span> ' . the_time('Y') . '</h1>';
+		echo '<h1 class="archive-title"><span>Yearly Archives:</span> ' . get_the_time('Y') . '</h1>';
 	}
 	
 }

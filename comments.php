@@ -11,14 +11,9 @@
 
 */
 
-
-
-if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME'])) {
-	
-	die ('Please do not load this page directly. Thanks!');
-	
-}
-
+// TEMPLATE TO DISPLAY COMMENTS FORM
+if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
+die ('Please do not load this page directly. Thanks!');
 
 	// BEGIN COMMENT CODE
 	if (post_password_required() ) {
@@ -66,9 +61,7 @@ if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['
 	endif;
 
 
-	if (comments_open()) : 
-	
-	?>
+	if (comments_open()) : ?>
 
 	<section id="respond" class="respondForm">
 

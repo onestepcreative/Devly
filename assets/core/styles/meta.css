@@ -1,6 +1,5 @@
-/**
- * CMB Styling
- */
+
+
 table.devlyMetabox td, table.devlyMetabox th {
 	border-bottom:1px solid #EEE;
 	padding: 20px 10px; 
@@ -220,15 +219,8 @@ div.time-picker li.selected {
 	color:#fff;
 }
 
-/**
- * jQuery UI CSS Framework 1.8.16
- *
- * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
- * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://jquery.org/license
- *
- * http://docs.jquery.com/UI/Theming/API
- */
+
+
 .devlyElement .ui-helper-hidden {
 	display:none;
 }
@@ -1399,21 +1391,12 @@ div.time-picker li.selected {
 
 .devlyElement .ui-datepicker-cover {
 	display:none;
-/*sorry for IE5*/
 	display//:block;
-/*sorry for IE5*/
 	position:absolute;
-/*must have*/
 	z-index:-1;
-/*must have*/
 	filter:mask();
-/*must have*/
 	top:-4px;
-/*must have*/
 	left:-4px;
-/*must have*/
 	width:200px;
-/*must have*/
 	height:200px;
-/*must have*/
 }

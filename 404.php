@@ -15,11 +15,11 @@ get_header();
 
 ?>
 
-<div id="contentContainer" class="wrap clearfix">
-	
-	<div id="mainContent" class="eightcol clearfix">
+<div id="content-container" class="row">
 
-		<hgroup class="contentNotFound">
+	<div id="main-content" class="small-12 medium-8 large-8 column">
+
+		<hgroup class="no-content">
 			<h3>You appear to be lost...</h3>
 			<h5>It's probably on us, so you can bet we're working on it.</h5>
 		</hgroup>

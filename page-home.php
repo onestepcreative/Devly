@@ -16,11 +16,11 @@ get_header();
 
 ?>
 
-<div id="contentContainer" class="wrap">
-	
-	<div id="mainContent" class="eightcol clearfix">		
+<div id="content-container" class="row">
+
+	<div id="main-content" class="small-12 medium-8 large-8 column">		
 				
-		
+		<!-- HOME PAGE TEMPLATE -->
 						
 	</div>
 

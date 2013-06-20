@@ -24,6 +24,12 @@
 			
 		},
 		
+		alertMe: function() {
+			
+			alert('this is my awesome test');
+				
+		},
+		
 		fallbacks: function() {
 			
 			if (!Modernizr.input.placeholder) {

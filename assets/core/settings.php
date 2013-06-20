@@ -5,6 +5,8 @@
 	Twitter:  @onestepcreative
 	Website:  http://onestepcreative.com
 	
+	Theme Version:			3.0.1
+	
 	This file handles creates all of the
 	"Theme Settings" you see in the devly
 	admin. This is here for you to customize
@@ -13,6 +15,8 @@
 	This was written a while ago, so I'm
 	sure there is a more elegant way to do
 	this now.
+	
+	
 	
 	Initialized in core.php:
 	add_action( 'admin_init', 'devlyAdminInit' );

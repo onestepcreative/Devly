@@ -1,17 +1,16 @@
-	
-	<div style="clear:both;"></div>
-	
-	<footer id="footerContainer" class="wrap">
 
+
+
+<footer class="footer-container">
+	<div class="row">
+	
+		<p class="attribution"><?php devlyQueries(); ?></p>
 		<nav id="footerNav"><?php devlyFooterMenu(); ?></nav>
+	
+	</div>
+</footer>
 
-		<p class="attribution">
-			<?php devlyQueries(); // FOUND IN THE DEVLY HELPER FILE (assets/core/helpers.php) ?>
-		</p>
-
-	</footer>
-
-</div>
+</div><!-- // DON'T REMOVE END DIV // -->
 
 <?php wp_footer(); ?>
 
