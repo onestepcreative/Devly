@@ -1,8 +1,8 @@
-# Devly, a Modern Wordpress Theme for Developers
+# A Wordpress Framework for Developers
 
-A modern theme, built to give developers a solid starting point for wordpress dev.
+A modern Wordpress Framework, aka theme, for developers.
 
 ## About Devly
 
-Devly was conceived almost two years ago from a personal challenge to start building Wordpress Themes. The original goal was to create a framework that I could use for each of my Wordpress sites. Although the theme has evolved greatly since then, it has been a great theme to use as a starting point. I've built sites for small bed & breakfast company, all the way up to industry leading company getting millions of views a month. 
+Devly was conceived more than two years ago, mostly out of frustration for having to jump around in old projects to find code that I needed for a current project. I decided to build a framework (a solid starting point) that would package up common functionalities I use on most sites, wrapping them up for easy reuse. The theme is well documented, and consists of a handy file called Helpers.php that gives you access to common functionalities with the use of a simple functions call.
 
