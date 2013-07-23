@@ -12,8 +12,8 @@ Built using Foundation 4 by Zurb, Devly is responsive ready
 
 Minimized number of queries running on install, making Devly fast
 
-Helpers clean default Wordpress ugliness, making Devly fast & secure
+Helpers clean default Wordpress ugliness, making Devly even more secure
 
 You can easily add custom meta boxes, Devly is easily customizeable
 
-Devly is a work in progress, currently focus on speed enhancements
+Devly is a work in progress, currently focusing on speed enhancements
